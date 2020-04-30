@@ -1,0 +1,184 @@
+*{
+    box-sizing: border-box;
+}
+
+/* ================NAVBAR STYLE===================*/
+.navbar{
+    padding: 0px 15px 0px 15px;
+    background-color: rgba(0,0,0,0.75);
+}
+
+.navbar-brand > img{
+    height: 50px;
+}
+
+.navbar-nav > li {
+    padding-right: 15px;
+    font-family: 'Righteous', sans-serif;
+}
+
+.navbar-nav > li a{
+    color: #c5c5c5;
+}
+
+.navbar-nav > li a:hover{
+    color: #fff;
+}
+
+.navbar .navbar-nav .active > .nav-link {
+    color:#dbe11a;
+}
+
+/* ================HERO STYLE===================*/
+
+.hero-element{
+    height: 500px;
+    z-index: -1;
+    padding: 0;
+    background-image: url("../img/Hero.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#PageTitleHero h1{
+    color: #fff;
+    margin: auto;
+    text-align: center;
+}
+
+#PageTitleHero{
+    height: inherit;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 660px) {
+    #T_First{
+        font-size: 1.5em;
+    }
+
+    #T_Second{
+        font-size: 0.5em;
+    }
+}
+
+@media (min-width: 660px) {
+    #T_First{
+        font-size: 3em;
+    }
+
+    #T_Second{
+        font-size: 1em;
+    }
+}
+/* ================SECTION STYLE===================*/
+.sectionHeader{
+    height: 200px;
+    background-color: #101820;
+}
+
+.sectionHeader h1,h2{
+    color: #dfdfdf;
+    font-family: 'Arnold',sans-serif;
+    font-weight: 800;
+}
+
+
+.sectionHeader h1{
+    padding-top: 45px;
+    margin-left: 15%;
+    margin-bottom: 0;
+    font-size: 2.5em;
+}
+
+.sectionHeader h2{
+    margin-left: 20%;
+    font-size: 1.5em;
+    padding-top: 0px;
+}
+
+.sectionHeader hr{
+    height: 1px;
+    background-color: #dfdfdf;
+    margin-left: 10%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#kezdolaptitle{
+    display: flex;
+    align-items: flex-end;
+    padding-top: 20px;
+}
+
+#kezdolaptitle img{
+    padding-right: 15px;
+}
+
+.sectionContent{
+    padding-bottom: 90px;
+}
+
+article {
+    line-height: 2.5em;
+    font-family: 'Quicksand',sans-serif;
+    font-weight: 500;
+    font-size: 1.2em;
+    padding-top: 30px;
+}
+
+#trailerCaption{
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-left: 4%;
+    margin-bottom: 0;
+}
+
+.mediaArea{
+    margin-top: 40px;
+}
+
+.media-video{
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#gallifreyImageBackground{
+    background-image: url(../img/Gallifrey.jpg);
+    background-repeat: no-repeat;
+    background-position: center left;
+    height: 400px;
+}
+
+.sectionSepImgContainer{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sectionSepImgContainer img{
+    max-height: 130px;
+}
+
+.MainText{
+    font-family: 'Quicksand',sans-serif;
+    font-size: 1.4em;
+    padding-top: 35px;
+}
+
+#tardisOnStreet{
+    max-height: 400px;
+    margin-top: 60px;
+}
+
+footer{
+    height: 100px;
+    display: flex;
+    background-color: #101820;
+}
+
+footer h1{
+    color: #dfdfdf;
+    margin: auto;
+    font-weight: 800;
+}
