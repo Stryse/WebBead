@@ -21,12 +21,15 @@
         <!-- Brand -->
         <a class="navbar-brand" href="#"><img src="./img/TardisLogo.png"></a>
       
+        <!-- WHONIVERSE TITLE - ONLY ON SMALL SCREEN -->
+        <h1 class="d-md-none text-white">Whoniverse</h1>
+
         <!-- Toggler/collapsibe Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
       
-        <!-- Navbar links -->
+        <!-- NAVBAR LINKS - COLLAPSED ON SMALL SCREEN -->
         <div class="collapse navbar-collapse" id="mainNavbar">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
@@ -42,17 +45,29 @@
               <a class="nav-link" href="#">Dokik</a>
             </li>
           </ul>
-          <ul class="navbar-nav ml-auto .d-md-none .d-lg-block">
+          <!-- LINKS - HIDDEN ON MEDIUM SCREEN -->
+          <ul class="navbar-nav ml-auto d-md-none d-lg-flex">
             <li class="nav-item">
-                <a class="nav-link" href="https://www.facebook.com/DoctorWho/">Facebook<i class="fab fa-facebook-square"></i></a>
+                <a class="nav-link" href="https://www.facebook.com/DoctorWho/">Facebook <i class="fab fa-facebook-square"></i></a>
               </li>
             <li class="nav-item">
-                <a class="nav-link" href="https://www.youtube.com/user/doctorwho">Youtube<i class="fab fa-youtube"></i></a>
+                <a class="nav-link" href="https://www.youtube.com/user/doctorwho">Youtube <i class="fab fa-youtube"></i></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="https://hu.wikipedia.org/wiki/Ki_vagy,_doki%3F">Wikipedia<i class="fab fa-wikipedia-w"></i></a>
+                <a class="nav-link" href="https://hu.wikipedia.org/wiki/Ki_vagy,_doki%3F">Wikipedia <i class="fab fa-wikipedia-w"></i></a>
             </li>
           </ul>
+          <!-- LINKS DROPDOWN ON MEDIUM SCREEN -->
+          <div class="navbar-nav ml-auto d-none d-md-block d-lg-none dropdown mr-4">
+                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Továbbiak
+                </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="https://www.facebook.com/DoctorWho/">Facebook <i class="fab fa-facebook-square"></i></a>
+                <a class="dropdown-item" href="https://www.youtube.com/user/doctorwho">Youtube <i class="fab fa-youtube"></i></a>
+                <a class="dropdown-item" href="https://hu.wikipedia.org/wiki/Ki_vagy,_doki%3F">Wikipedia <i class="fab fa-wikipedia-w"></i></a>
+              </div>
+          </div>
         </div>
       </nav>
 
@@ -95,10 +110,17 @@
         </section>
         <section>
             <div class="sectionHeader">
-                <div class="sectionSepImgContainer">
-                    <figure class="mt-auto mb-auto">
-                    <img src="./img/gallifreyanwriting.png" class="img-fluid">
-                    </figure>
+                <div class="container-fluid d-flex">
+                    <div class="col-sm-8">
+                        <figure class="mt-auto mb-auto">
+                        <img src="./img/exclamationmark.png" class="img-fluid">
+                        </figure>
+                    </div>
+                    <div class="col-sm-4 sectionSepImgContainer mt-4">
+                        <figure class="mt-auto mb-auto">
+                        <img src="./img/gallifreyanwriting.png" class="img-fluid">
+                        </figure>
+                    </div>
                 </div>
                 <hr>
                 <h2>Jelentősége</h2>
@@ -133,7 +155,7 @@
                     <div class="col-sm-8">
                         <h1>Útmutató a sorozathoz</h1>
                     </div>
-                    <div class="col-sm-4 sectionSepImgContainer">
+                    <div class="col-sm-4 sectionSepImgContainer mt-4">
                         <figure class="mt-auto mb-auto">
                         <img src="./img/gallifreyanwriting.png" class="img-fluid">
                         </figure>
@@ -147,11 +169,9 @@
             </div>
         </section>
         <footer>
-            <div class="mx-auto d-flex">
-                <a href="https://www.facebook.com/DoctorWho/"><i class="fab fa-facebook-square"></i>Facebook</a>
+                <a href="https://www.facebook.com/DoctorWho/"><i class="fab fa-facebook-square"></i> Facebook</a>
                 <h1>Whoniverse</h1>
-                <a href="https://www.youtube.com/user/doctorwho"><i class="fab fa-youtube"></i>Youtube</a>
-            </di>
+                <a href="https://www.youtube.com/user/doctorwho"><i class="fab fa-youtube"></i> Youtube</a>
         </footer>
     </div>
 

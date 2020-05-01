@@ -8,20 +8,26 @@
     background-color: rgba(0,0,0,0.75);
 }
 
+@media (max-width: 768px) {
+    .navbar { background-color: #000; }
+}
+
 .navbar-brand > img{
     height: 50px;
 }
 
 .navbar-nav > li {
     padding-right: 15px;
-    font-family: 'Righteous', sans-serif;
+    margin: auto;
 }
 
-.navbar-nav > li a{
+.navbar-nav a{
     color: #c5c5c5;
+    font-family: 'Righteous', sans-serif;
+    text-decoration: none;
 }
 
-.navbar-nav > li a:hover{
+.navbar-nav a:hover{
     color: #fff;
 }
 
@@ -83,28 +89,62 @@
     font-weight: 800;
 }
 
+@media (max-width: 768px) {
 
-.sectionHeader h1{
-    padding-top: 45px;
-    margin-left: 15%;
-    margin-bottom: 0;
-    font-size: 2.5em;
+    .sectionHeader{
+        height: 160px;
+    }
+
+    .sectionHeader h1{
+        padding-top: 45px;
+        margin: auto;
+        margin-bottom: 0;
+        font-size: 1.5em;
+    }
+    
+    .sectionHeader h2{
+        font-size: 1.3em;
+        text-align: center;
+    }
+    
+    .sectionHeader hr{
+        height: 1px;
+        background-color: #dfdfdf;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+
+    .sectionHeader img{
+        max-height: 100px;
+    };
 }
 
-.sectionHeader h2{
-    margin-left: 20%;
-    font-size: 1.5em;
-    padding-top: 0px;
-}
+@media (min-width: 768px) {
 
-.sectionHeader hr{
-    height: 1px;
-    background-color: #dfdfdf;
-    margin-left: 10%;
-    margin-top: 2px;
-    margin-bottom: 2px;
+    .sectionHeader h1{
+        padding-top: 45px;
+        margin-left: 15%;
+        margin-bottom: 0;
+        font-size: 2.5em;
+    }
+    
+    .sectionHeader h2{
+        margin-left: 20%;
+        font-size: 1.5em;
+        padding-top: 0px;
+    }
+    
+    .sectionHeader hr{
+        height: 1px;
+        background-color: #dfdfdf;
+        margin-left: 10%;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
 }
-
+    
 #kezdolaptitle{
     display: flex;
     align-items: flex-end;
@@ -130,6 +170,7 @@ article {
 #trailerCaption{
     font-size: 1.5em;
     font-weight: 600;
+    margin-top: 20px;
     margin-left: 4%;
     margin-bottom: 0;
 }
@@ -156,8 +197,10 @@ article {
     justify-content: flex-end;
 }
 
-.sectionSepImgContainer img{
-    max-height: 130px;
+@media (min-width: 768px){
+    .sectionHeader img{
+        max-height: 130px;
+    }
 }
 
 .MainText{
@@ -174,11 +217,18 @@ article {
 footer{
     height: 100px;
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     background-color: #101820;
 }
 
-footer h1{
+footer h1, footer a{
     color: #dfdfdf;
-    margin: auto;
+    text-decoration: none;
     font-weight: 800;
+}
+
+footer a:hover{
+    color: #fff;
+    text-decoration: none;
 }
