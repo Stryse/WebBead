@@ -25,10 +25,12 @@
     color: #c5c5c5;
     font-family: 'Righteous', sans-serif;
     text-decoration: none;
+    transition: .5s;
 }
 
 .navbar-nav a:hover{
     color: #fff;
+    transition: .5s;
 }
 
 .navbar .navbar-nav .active > .nav-link {
@@ -101,12 +103,16 @@
 
 @media (max-width: 768px) {
 
+    .sectionHeader .jc{
+        justify-content: center;
+    }
 
     .sectionHeader h1{
         margin: auto;
         margin-bottom: 0;
         padding-bottom: 5px;
         font-size: 1.5em;
+        text-align: center;
     }
     
     .sectionHeader h2{
@@ -248,18 +254,30 @@ figcaption{
 }
 /* TABLE STYLE*/
 
-table{
+#szakaszTable{
     margin: 80px auto;
     text-align: center;
 }
 
-table, th, td {
+table,th, td {
     border: 1px solid black;
+}
+
+table caption{
+    text-align: center;
+}
+
+#szakaszTable caption table{
+    margin: 10px auto;
+}
+
+#szakaszTable caption td{
+    padding: 0px 0px;
 }
 
 @media (min-width: 768px)
 {
-    table th, td {
+    #szakaszTable th, td {
         padding: 15px 25px 15px 25px;
     }
 }
@@ -273,12 +291,12 @@ table, th, td {
 
 @media (max-width: 576px)
 {
-    table{
+    #szakaszTable{
         font-size: 0.6em;
     }
 }
 
-table th{
+#szakaszTable th{
     background-color: #002060;
     color: #fff;
     text-align: center;
@@ -287,7 +305,7 @@ table th{
     padding-bottom: 15px;
 }
 
-table tr:nth-child(3){
+#szakaszTable tr:nth-child(3){
     text-align: left;
     vertical-align: top;
 }
