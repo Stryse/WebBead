@@ -22,7 +22,7 @@
         <a class="navbar-brand" href="#"><img src="./img/TardisLogo.png"></a>
       
         <!-- WHONIVERSE TITLE - ONLY ON SMALL SCREEN -->
-        <h1 class="d-md-none text-white">Whoniverse</h1>
+        <h1 class="d-md-none text-white" id="smallNavText">Whoniverse</h1>
 
         <!-- Toggler/collapsibe Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar">
@@ -202,7 +202,7 @@
                         <th colspan="3">NewWho</th>
                         </tr>
                         <tr>
-                            <td class="table-mild-recommended">Nem összefüggő<br>(elveszett részek)</td>
+                            <td class="table-mild-recommended"><b>Nem összefüggő</b><br>(elveszett részek)</td>
                             <td class="table-recommended"><b>Első szakasz<br>(2005-2009)</b><br>Russel T Davies<br>(showrunner)</td>
                             <td class="table-mild-recommended"><b>Második szakasz<br>(2010-2017)</b><br>Steven Moffat<br>(showrunner)</td>
                             <td class="table-notrecommended"><b>Harmadik szakasz<br>(2018 - )</b><br>Chris Chibnall<br>(showrunner)</td>
@@ -277,9 +277,29 @@
                 </p>
                 <div class="container text-center">
                     <form action="mailto:vmt982@inf.elte.hu" method="POST" enctype="text/plain">
-                        <label for="emailInput"></label><br>
-                        <input type="email" name="email" id="emailInput" size="50" placeholder="Email cím:" maxlength="40" required>
-
+                        <fieldset>
+                        <legend>Adatok</legend>
+                        <label for="nevInput">Add meg a teljes neved</label><br>
+                        <input type="text" name="nev" id="nevInput" size="50" placeholder="Név:" maxlength="40" required class="textInput"><br>
+                        <label for="emailInput">Add meg az Email címed, amin értesíthetünk</label><br>
+                        <input type="email" name="email" id="emailInput" size="50" placeholder="Email cím:" maxlength="40" class="textInput" required>
+                        </fieldset>
+                        <fieldset id="interestRadio">
+                            <legend>Nyeremények</legend>
+                            <label for="interestRadio">Híreken kívül értékes nyereményekkel is felkeresnénk téged</label><br>
+                            <input type="radio" name="nyeremeny" id="v1" value="1"><label id="lv1" for="v1">Érdekel</label>
+                            <input type="radio" name="nyeremeny" id="v2" value="2" checked><label id="lv2" for="v2">Nem érdekel</label>
+                        </fieldset>
+                        <legend>Érdekeltség</legend>
+                        <label for="erdekeltseg">Ha van időd add meg milyen az oldallal kapcsolatos hírekre lennél kíváncsi</label><br>
+                        <textarea name="erdekeltseg" id="erdekeltseg" cols="60" rows="6" maxlength="250" class="textInput"></textarea><br>
+                        <label for="elfogad">
+                            <input type="checkbox" name="elfogad" id="elfogad" value="igen" required>
+                            Elfogadom, hogy az oldal üzemeltetői emailt küldjenek a fent megadott címre
+                        </label>
+                            <input type="submit" value="Elküld" class="myformButton">
+                            <input type="reset" value="Töröl" class="myformButton">
+                        </fieldset>
                     </form>
                 </div>
             </div>
