@@ -77,14 +77,16 @@
         </div>
         <section>
             <div class="sectionHeader">
-                <div id="kezdolaptitle">
-                    <h1>Kezdőlap</h1>
-                    <img src="./img/DalekSmall.png" class="img-fluid d-none d-md-block">
-                    <img src="./img/TardisSmall.png"class="img-fluid d-none d-md-block">
-                    <img src="./img/AngelSmall.png" class="img-fluid d-none d-md-block">
+                <div class="w-100">
+                    <div id="kezdolaptitle">
+                        <h1>Kezdőlap</h1>
+                        <img src="./img/DalekSmall.png" class="img-fluid d-none d-md-block">
+                        <img src="./img/TardisSmall.png"class="img-fluid d-none d-md-block">
+                        <img src="./img/AngelSmall.png" class="img-fluid d-none d-md-block">
+                    </div>
+                    <hr>
+                    <h2>Doctor Who: A sorozat</h2>
                 </div>
-                <hr>
-                <h2>Doctor Who: A sorozat</h2>
             </div>
             <div class="container-fluid sectionContent">
                 <div class="row">
@@ -98,7 +100,7 @@
                     <div class="col-sm-12 col-md-5 col-lg-6 mediaArea m-auto">
                         <p id="trailerCaption">Előzetes<p> <!-- TODO normális tag-->
                             <div class="embed-responsive embed-responsive-16by9 media-video">
-                                <video controls autoplay muted loop>
+                                <video controls poster="./img/video_preview.png">
                                     <source src="./media/Doctor_Who_Trailer.mp4" type="video/mp4">
                                         A böngésző nem támogat videó lejátszást.
                                 </video>
@@ -113,24 +115,28 @@
                     </article>
                 </div>
             </div>
-            <img src="./img/Gallifrey.png" class="img-fluid">
+            <div id="gallifreyImageBackground">
+            <img src="./img/Gallifrey.png" class="img-fluid m-auto">
+            </div>
         </section>
         <section>
             <div class="sectionHeader">
-                <div class="container-fluid d-flex">
-                    <div class="col-sm-8">
-                        <figure class="mt-auto mb-auto">
-                        <img src="./img/exclamationmark.png" class="img-fluid">
-                        </figure>
+                <div class="w-100">
+                    <div class="container-fluid d-flex">
+                        <div class="col-sm-8">
+                            <figure class="mt-auto mb-auto">
+                            <img src="./img/exclamationmark.png" class="img-fluid">
+                            </figure>
+                        </div>
+                        <div class="col-sm-4 sectionSepImgContainer mt-4">
+                            <figure class="mt-auto mb-auto">
+                            <img src="./img/gallifreyanwriting.png" class="img-fluid">
+                            </figure>
+                        </div>
                     </div>
-                    <div class="col-sm-4 sectionSepImgContainer mt-4">
-                        <figure class="mt-auto mb-auto">
-                        <img src="./img/gallifreyanwriting.png" class="img-fluid">
-                        </figure>
-                    </div>
+                    <hr>
+                    <h2>Jelentősége</h2>
                 </div>
-                <hr>
-                <h2>Jelentősége</h2>
             </div>
             <div class="container-fluid sectionContent">
                 <div class="row">
@@ -145,7 +151,9 @@
                         </p>
                     </div>
                     <div class="col-sm-12 col-md-7 col-lg-6 d-flex m-auto">
-                        <img src="./img/tardis_on_street.jpg" class="img-fluid mx-auto" id="tardisOnStreet">
+                        <a href="./img/tardis_on_street.jpg" target="_blank" id="tardisOnStreet">
+                            <img src="./img/tardis_on_street.jpg" class="img-fluid mx-auto">
+                        </a>
                     </div>
                     </div>
                 <div class="row m-auto">
@@ -162,19 +170,21 @@
         </section>
         <section>  
             <div class="sectionHeader">
-                <img src="./img/map.png" class="img-fluid position-absolute">
-                <div class="container-fluid d-flex">
-                    <div class="col-sm-8">
-                        <h1>Útmutató a sorozathoz</h1>
+                <div class="w-100">
+                    <img src="./img/map.png" class="img-fluid position-absolute">
+                    <div class="container-fluid d-flex">
+                        <div class="col-sm-8">
+                            <h1>Útmutató a sorozathoz</h1>
+                        </div>
+                        <div class="col-sm-4 sectionSepImgContainer mt-4">
+                            <figure class="mt-auto mb-auto">
+                                <img src="./img/gallifreyanwriting.png" class="img-fluid">
+                            </figure>
+                        </div>
                     </div>
-                    <div class="col-sm-4 sectionSepImgContainer mt-4">
-                        <figure class="mt-auto mb-auto">
-                        <img src="./img/gallifreyanwriting.png" class="img-fluid">
-                        </figure>
-                    </div>
+                    <hr>
+                    <h2>38 évad, hol kezdjem? ...</h2>
                 </div>
-                <hr>
-                <h2>38 évad, hol kezdjem? ...</h2>
             </div>
             <div class="container-fluid sectionContent">
                 <div col-sm-12>
@@ -296,7 +306,7 @@
                         <label for="elfogad">
                             <input type="checkbox" name="elfogad" id="elfogad" value="igen" required>
                             Elfogadom, hogy az oldal üzemeltetői emailt küldjenek a fent megadott címre
-                        </label>
+                        </label><br>
                             <input type="submit" value="Elküld" class="myformButton">
                             <input type="reset" value="Töröl" class="myformButton">
                         </fieldset>

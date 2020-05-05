@@ -45,6 +45,7 @@
     height: 500px;
     z-index: -1;
     padding: 0;
+    background-color: #101820;
     background-image: url("../img/Hero.png");
     background-position: center center;
     background-repeat: no-repeat;
@@ -83,6 +84,9 @@
 }
 /* ================SECTION STYLE===================*/
 .sectionHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 200px;
     background-color: #101820;
     text-shadow: 2px 2px #000;
@@ -92,13 +96,13 @@
     color: #dfdfdf;
     font-family: 'Arnold',sans-serif;
     font-weight: 800;
+    z-index: 5;
 }
 
 @media (max-width: 768px) {
 
 
     .sectionHeader h1{
-        padding-top: 45px;
         margin: auto;
         margin-bottom: 0;
         padding-bottom: 5px;
@@ -147,7 +151,7 @@
         margin-bottom: 2px;
     }
 }
-    
+
 #kezdolaptitle{
     display: flex;
     align-items: flex-end;
@@ -190,10 +194,8 @@ article {
 }
 
 #gallifreyImageBackground{
-    background-image: url(../img/Gallifrey.jpg);
-    background-repeat: no-repeat;
-    background-position: center left;
-    height: 400px;
+    background-color: #101820;
+    text-align: center;
 }
 
 .sectionSepImgContainer{
@@ -222,8 +224,12 @@ article {
 }
 
 #tardisOnStreet{
-    max-height: 400px;
+    margin: auto;
     margin-top: 60px;
+}
+
+#tardisOnStreet img{
+    max-height: 400px;
 }
 
 /* TABLE STYLE*/
