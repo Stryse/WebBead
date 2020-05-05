@@ -48,15 +48,23 @@
     z-index: -1;
     padding: 0;
     background-color: #101820;
-    background-image: url("../img/Hero.png");
     background-position: center center;
     background-repeat: no-repeat;
+}
+
+.h-main{
+    background-image: url("../img/Hero.png");
+}
+
+.h-classic{
+    background-image: url("../img/HeroClassic.png");
 }
 
 #PageTitleHero h1{
     color: #fff;
     margin: auto;
     text-align: center;
+    text-shadow: 2px 2px black;
 }
 
 #PageTitleHero{
