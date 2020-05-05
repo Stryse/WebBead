@@ -226,12 +226,26 @@ article {
 #tardisOnStreet{
     margin: auto;
     margin-top: 60px;
+    padding: 2px 2px;
+}
+
+figcaption{
+    text-align: center;
 }
 
 #tardisOnStreet img{
     max-height: 400px;
 }
 
+.preview{
+    transition: .5s;
+}
+
+.preview:hover{
+    transform: scale(1.03);
+    opacity: 0.9;
+    transition: .5s;
+}
 /* TABLE STYLE*/
 
 table{
@@ -387,6 +401,12 @@ table tr:nth-child(3){
     transition: .5s;
     color: #c70009;
     border-color: #c70009;
+}
+
+.myformButton:focus{
+    transition: .5s;
+    color: #0024c7;
+    border-color: #0024c7;
 }
 
 /* FOOTER STYLE */
