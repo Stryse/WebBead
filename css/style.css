@@ -180,10 +180,6 @@
     padding-bottom: 90px;
 }
 
-article h2{
-    font-style: italic;
-}
-
 article, article p{
     line-height: 2.5em;
     font-family: 'Quicksand',sans-serif;
@@ -191,6 +187,11 @@ article, article p{
     font-size: 1.2em;
     padding-top: 30px;
     text-align: justify;
+}
+
+article h2{
+    font-style: italic;
+    text-align: left;
 }
 
 #trailerCaption{
