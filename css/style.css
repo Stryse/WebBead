@@ -331,20 +331,34 @@ table caption{
     vertical-align: top;
 }
 
-.table-recommended{
+.table-recommended-bg{
     background-color: green;
 }
 
-.table-notrecommended{
-    background: red;
+.table-notrecommended-bg{
+    background-color: red;
 }
 
-.table-mild-recommended{
+.table-mild-recommended-bg{
     background-color: yellow;
 }
 
-.table-color-code{
-    min-width: 20px;
+.table-recommended{
+    color: green;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+}
+
+.table-notrecommended{
+    color: red;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+}
+
+.table-mild-recommended{
+    color: yellow;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
 }
 
 /* HIRLEVEL STYLE*/
