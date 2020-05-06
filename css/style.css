@@ -60,6 +60,11 @@
     background-image: url("../img/HeroClassic.png");
 }
 
+.h-doctors{
+    background-image: url("../img/alldoctors.png");
+    background-position: center top;
+}
+
 #PageTitleHero h1{
     color: #fff;
     margin: auto;
@@ -222,6 +227,10 @@
 
 .mylight-bg{
     background-color: #dfdfdf;
+}
+
+.mydkblue-bg{
+    background-color:  #101820;
 }
 
 @media (max-width: 992px)
