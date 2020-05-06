@@ -492,6 +492,7 @@ table caption{
 
 #hirlevel form legend{
     text-shadow: 1px 1px black;
+    text-align: center;
 }
 
 .myformButton {
@@ -523,7 +524,7 @@ footer{
     height: 100px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: #101820;
 }
 
