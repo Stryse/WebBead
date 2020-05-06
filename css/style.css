@@ -67,14 +67,27 @@
     text-shadow: 2px 2px black;
 }
 
+#PageTitleHero_D h1{
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px black;
+}
+
 #PageTitleHero{
     height: inherit;
     display: flex;
     justify-content: center;
 }
 
+#PageTitleHero_D{
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
 @media (max-width: 660px) {
-    #T_First{
+    #T_First, #T_First_D{
         font-size: 1.5em;
     }
 
@@ -84,7 +97,7 @@
 }
 
 @media (min-width: 660px) {
-    #T_First{
+    #T_First, #T_First_D{
         font-size: 3em;
     }
 
@@ -256,7 +269,7 @@ article h2{
     padding: 2px 2px;
 }
 
-figcaption{
+figure, figcaption{
     text-align: center;
 }
 
@@ -340,7 +353,7 @@ table caption{
 }
 
 .table-mild-recommended-bg{
-    background-color: yellow;
+    background-color: #ffc601;
 }
 
 .table-recommended{
@@ -356,7 +369,7 @@ table caption{
 }
 
 .table-mild-recommended{
-    color: yellow;
+    color: #ffc601;
     font-weight: bold;
     text-shadow: 1px 1px black;
 }
