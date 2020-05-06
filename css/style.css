@@ -214,6 +214,16 @@
     background-color: #212121;
 }
 
+.my-col-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.mylight-bg{
+    background-color: #dfdfdf;
+}
+
 article p{
     line-height: 2.5em;
     font-family: 'Quicksand',sans-serif;
