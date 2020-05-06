@@ -405,6 +405,18 @@ table caption{
     text-shadow: 1px 1px black;
 }
 
+.monster-table{
+    background-color: #efefef;
+}
+
+.monster-table th{
+    text-align: center;
+}
+
+.monster-table tr td:first-child{
+    font-weight: bold;
+}
+
 /* HIRLEVEL STYLE*/
 #hirlevel{
     background-color: #ffd101;
