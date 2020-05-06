@@ -102,7 +102,7 @@
     text-shadow: 2px 2px #000;
 }
 
-.sectionHeader h1,h2{
+.sectionHeader h2,h3{
     color: #dfdfdf;
     font-family: 'Arnold',sans-serif;
     font-weight: 800;
@@ -115,7 +115,7 @@
         justify-content: center;
     }
 
-    .sectionHeader h1{
+    .sectionHeader h2{
         margin: auto;
         margin-bottom: 0;
         padding-bottom: 5px;
@@ -123,7 +123,7 @@
         text-align: center;
     }
     
-    .sectionHeader h2{
+    .sectionHeader h3{
         font-size: 1.3em;
         text-align: center;
     }
@@ -144,14 +144,14 @@
 
 @media (min-width: 768px) {
 
-    .sectionHeader h1{
+    .sectionHeader h2{
         padding-top: 45px;
         margin-left: 15%;
         margin-bottom: 0;
         font-size: 2.5em;
     }
     
-    .sectionHeader h2{
+    .sectionHeader h3{
         margin-left: 20%;
         font-size: 1.5em;
         padding-top: 0px;
@@ -440,7 +440,7 @@ footer{
     height: 100px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background-color: #101820;
 }
 
