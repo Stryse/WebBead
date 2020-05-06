@@ -139,7 +139,7 @@
 
     .sectionHeader img{
         max-height: 100px;
-    };
+    }
 }
 
 @media (min-width: 768px) {
@@ -180,13 +180,21 @@
     padding-bottom: 90px;
 }
 
-article, article p{
+article p{
     line-height: 2.5em;
     font-family: 'Quicksand',sans-serif;
     font-weight: 500;
     font-size: 1.2em;
     padding-top: 30px;
     text-align: justify;
+}
+
+@media (max-width: 576px)
+{
+    article p{
+        line-height: 2em;
+        font-size: 1em;
+    }
 }
 
 article h2{
@@ -353,7 +361,7 @@ table caption{
     border-radius: 4px;
 }
 
-#hirlevel h1{
+#hirlevel h2{
     margin-left: 10%;
     text-shadow: 2px 2px rgba(0,0,0,0.5);
 }
@@ -376,7 +384,7 @@ table caption{
 
 @media(max-width: 576px)
 {
-    #hirlevel h1{
+    #hirlevel h2{
         font-size: 1.5rem;
     }
 
