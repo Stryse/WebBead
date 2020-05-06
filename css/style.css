@@ -115,11 +115,28 @@
     text-shadow: 2px 2px #000;
 }
 
+.sectionHeader-small{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 120px;
+    background-color: #101820;
+    text-shadow: 2px 2px #000;
+}
+
+.smallSeparator{
+    padding-top: 80px;
+}
+
 .sectionHeader h2,h3{
     color: #dfdfdf;
     font-family: 'Arnold',sans-serif;
     font-weight: 800;
     z-index: 5;
+}
+
+.sectionHeader-small h3{
+    margin-left: 5%;
 }
 
 @media (max-width: 768px) {
@@ -191,6 +208,10 @@
 
 .sectionContent{
     padding-bottom: 90px;
+}
+
+.mydark-bg{
+    background-color: #212121;
 }
 
 article p{
