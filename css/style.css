@@ -224,6 +224,19 @@
     background-color: #dfdfdf;
 }
 
+@media (max-width: 992px)
+{
+    .pd0-medium{
+        padding: 0px;
+    }
+
+    .nm-medium{
+        margin: 0px;
+        max-width: 100%;
+    }
+}
+
+
 article p{
     line-height: 2.5em;
     font-family: 'Quicksand',sans-serif;
