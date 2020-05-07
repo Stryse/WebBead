@@ -1,334 +1,469 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Whoniverse - Doctor Who Classic</title>
     <!--BOOTSTRAP-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--/BOOTSTRAP-->
+
     <!--CUSTOM CSS-->
     <link rel="stylesheet" href="../css/style.css">
+    <!--/CUSTOM CSS-->
+
     <!--FONTS-->
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!--/FONTS-->
+
     <!--FONTAWESOME (ICONS)-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!--/FONTAWESOME (ICONS)-->
 </head>
+
 <body>
-    
+
+    <!-- NAVBAR TOP -->
     <header>
         <nav class="navbar navbar-dark navbar-expand-md fixed-top">
-            <!-- Brand -->
-            <a class="navbar-brand" href="#"><img src="../img/TardisLogo.png" alt="Weblap logó"></a>
-            
+            <!-- Logo -->
+            <a class="navbar-brand" href="#"><img src="../img/TardisLogo.png" alt=""></a>
+            <!-- alt empty Decorative -->
+
             <!-- WHONIVERSE TITLE - ONLY ON SMALL SCREEN -->
             <p class="d-md-none text-white" id="smallNavText">Whoniverse</p>
-    
+
             <!-- Toggler/collapsibe Button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar">
-              <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
-          
+
             <!-- NAVBAR LINKS - COLLAPSED ON SMALL SCREEN -->
             <div class="collapse navbar-collapse" id="mainNavbar">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="../index.html">Kezdőlap</a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Classic</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./newWho.html">NewWho</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./dokik.html">Dokik</a>
-                </li>
-              </ul>
-              <!-- LINKS - HIDDEN ON MEDIUM SCREEN -->
-              <ul class="navbar-nav ml-auto d-md-none d-lg-flex">
-                <li class="nav-item">
-                    <a class="nav-link" href="https://www.facebook.com/DoctorWho/">Facebook <i class="fab fa-facebook-square"></i></a>
-                  </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://www.youtube.com/user/doctorwho">Youtube <i class="fab fa-youtube"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://hu.wikipedia.org/wiki/Ki_vagy,_doki%3F">Wikipedia <i class="fab fa-wikipedia-w"></i></a>
-                </li>
-              </ul>
-              <!-- LINKS DROPDOWN ON MEDIUM SCREEN -->
-              <div class="navbar-nav ml-auto d-none d-md-block d-lg-none dropdown mr-4">
-                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Kezdőlap</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Classic</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./newWho.html">NewWho</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./dokik.html">Dokik</a>
+                    </li>
+                </ul>
+                <!-- LINKS - HIDDEN ON MEDIUM SCREEN -->
+                <ul class="navbar-nav ml-auto d-md-none d-lg-flex">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.facebook.com/DoctorWho/">Facebook <i
+                                class="fab fa-facebook-square"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.youtube.com/user/doctorwho">Youtube <i
+                                class="fab fa-youtube"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://hu.wikipedia.org/wiki/Ki_vagy,_doki%3F">Wikipedia <i
+                                class="fab fa-wikipedia-w"></i></a>
+                    </li>
+                </ul>
+                <!-- /LINKS - HIDDEN ON MEDIUM SCREEN -->
+
+                <!-- LINKS DROPDOWN ON MEDIUM SCREEN -->
+                <div class="navbar-nav ml-auto d-none d-md-block d-lg-none dropdown mr-4">
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
                         Továbbiak
                     </a>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item facebook-link" href="https://www.facebook.com/DoctorWho/">Facebook <i class="fab fa-facebook-square"></i></a>
-                        <a class="dropdown-item youtube-link" href="https://www.youtube.com/user/doctorwho">Youtube <i class="fab fa-youtube"></i></a>
-                        <a class="dropdown-item wiki-link" href="https://hu.wikipedia.org/wiki/Ki_vagy,_doki%3F">Wikipedia <i class="fab fa-wikipedia-w"></i></a>
+                        <a class="dropdown-item facebook-link" href="https://www.facebook.com/DoctorWho/">Facebook <i
+                                class="fab fa-facebook-square"></i></a>
+                        <a class="dropdown-item youtube-link" href="https://www.youtube.com/user/doctorwho">Youtube <i
+                                class="fab fa-youtube"></i></a>
+                        <a class="dropdown-item wiki-link"
+                            href="https://hu.wikipedia.org/wiki/Ki_vagy,_doki%3F">Wikipedia <i
+                                class="fab fa-wikipedia-w"></i></a>
                     </div>
-              </div>
+                </div>
+                <!-- /LINKS DROPDOWN ON MEDIUM SCREEN -->
+
             </div>
-          </nav>
-        </header>
-    
-      <div class="container-fluid hero-element h-classic">
+            <!-- /NAVBAR LINKS - COLLAPSED ON SMALL SCREEN -->
+        </nav>
+    </header>
+    <!-- /NAVBAR TOP -->
+
+    <!-- CONTENT CONTAINER -->
+    <div class="container-fluid hero-element h-classic">
+
+        <!-- HERO ELEMENT -->
         <div id="PageTitleHero_D">
-            <h1><span id="T_First_D">Doctor Who<wbr> Classic</span></h1>
+            <h1><span id="T_First_D">Doctor Who<wbr> Classic</span></h1> <!-- MAIN TITLE -->
         </div>
+        <!-- /HERO ELEMENT -->
+
+        <!-- 1963 - 1989 SECTION -->
         <section>
+
+            <!-- SECTION HEADER -->
             <div class="sectionHeader">
                 <div class="w-100">
                     <div id="kezdolaptitle">
-                        <h2>1963 - 1989</h2>
+                        <h2>1963 - 1989</h2> <!-- SECTION TITLE -->
                         <img src="../img/oldtv.png" class="img-fluid d-none d-md-block img-fluid ml-4" alt="">
+                        <!-- alt empty Decorative -->
                     </div>
                     <hr>
-                    <h3>A kezdetek</h3>
+                    <h3>A kezdetek</h3> <!-- SECTION STITLE -->
                 </div>
             </div>
+            <!-- /SECTION HEADER -->
+
+            <!-- SECTION CONTENT CONTAINER -->
             <div class="container-fluid">
                 <div class="row py-4">
                     <div class="col-sm-12 col-md-7 col-lg-6 m-auto">
                         <p class="MainText">
-                            A sorozat <b>gyökerei egészen az 1960-as évekig nyúlnak vissza.</b> Az alkotók nem is tudták akkor, hogy egy több, mint <b>fél évszázadig futó projektbe</b> kezdenek bele. 
-                            Az első Doktort alakító színész is csak egy rövid, legfeljebb 2-3 éves szerepnek tekintette a dolgot. 
-                            A sorozat célja és célközönsége is egészen más volt, mint manapság. 
-                            Eredetileg gyerekeknek szánt, tanító jelleggel indult, és csak néhány évvel később alakult át egy önálló sci-fi univerzummá.
+                            A sorozat <b>gyökerei egészen az 1960-as évekig nyúlnak vissza.</b> Az alkotók nem is tudták
+                            akkor, hogy egy több, mint <b>fél évszázadig futó projektbe</b> kezdenek bele.
+                            Az első Doktort alakító színész is csak egy rövid, legfeljebb 2-3 éves szerepnek tekintette
+                            a dolgot.
+                            A sorozat célja és célközönsége is egészen más volt, mint manapság.
+                            Eredetileg gyerekeknek szánt, tanító jelleggel indult, és csak néhány évvel később alakult
+                            át egy önálló sci-fi univerzummá.
                         </p>
                         <p class="MainText">
-                            Maga a Doktor karaktere sem volt annyira kiforrott. A motívum, miszerint, ha életveszélyes állapotba kerül, akkor regenerálnia kell egy új alakba az csak később alakult ki, 
-                            miután <b>William Hartnell</b> – <i>az első Doktort alakító színész</i> - kora miatt nem tudta tovább folytatni. Származásáról sem tudtunk sokat – <i>leszámítva, hogy idegen</i> – 
-                            ezt is csak évekkel később dolgozták ki, miután látták, hogy hosszabb ideig képernyőn fog maradni a sorozat.
+                            Maga a Doktor karaktere sem volt annyira kiforrott. A motívum, miszerint, ha életveszélyes
+                            állapotba kerül, akkor regenerálnia kell egy új alakba az csak később alakult ki,
+                            miután <b>William Hartnell</b> – <i>az első Doktort alakító színész</i> - kora miatt nem
+                            tudta tovább folytatni. Származásáról sem tudtunk sokat – <i>leszámítva, hogy idegen</i> –
+                            ezt is csak évekkel később dolgozták ki, miután látták, hogy hosszabb ideig képernyőn fog
+                            maradni a sorozat.
                         </p>
                         <p class="MainText">
-                            Indulását követően rövid idő alatt széles rajongó táborra tett szert, <b>a mai színészei és alkotói közül sokan már az indulásakor lelkes rajongók</b> voltak.
+                            Indulását követően rövid idő alatt széles rajongó táborra tett szert, <b>a mai színészei és
+                                alkotói közül sokan már az indulásakor lelkes rajongók</b> voltak.
                         </p>
                     </div>
+                    <!-- PREVIEW IMAGES -->
                     <div class="col-sm-12 col-md-5 col-lg-6 my-col-flex">
                         <a href="../img/oldtardis.jpg">
                             <figure class="preview">
-                                <img src="../img/oldtardis_thumbnail.jpg" class="img-fluid" alt="Régi TARDIS a Doctor Who klasszikus sorozatból">
+                                <img src="../img/oldtardis_thumbnail.jpg" class="img-fluid"
+                                    alt="Régi TARDIS a Doctor Who klasszikus sorozatból">
                                 <figcaption>Régi TARDIS a Doctor Who klasszikus sorozatból</figcaption>
                             </figure>
                         </a>
                         <a href="../img/hartnell.jpg">
                             <figure class="preview">
-                                <img src="../img/hartnell_thumbnail.jpg" class="img-fluid" alt="William Hartnell - az első Doktort alakító színész">
+                                <img src="../img/hartnell_thumbnail.jpg" class="img-fluid"
+                                    alt="William Hartnell - az első Doktort alakító színész">
                                 <figcaption>William Hartnell - az első Doktort alakító színész</figcaption>
                             </figure>
                         </a>
                     </div>
+                    <!-- /PREVIEW IMAGES -->
                 </div>
             </div>
+            <!-- /SECTION CONTENT CONTAINER -->
         </section>
+        <!-- /1963 - 1989 SECTION -->
+
+        <!-- MONSTERS SECTION -->
         <section>
+
+            <!-- SECTION HEADER -->
             <div class="sectionHeader">
                 <h2 class="m-auto">A klasszikus sorozat ikonikus szörnyei</h2>
             </div>
+            <!-- /SECTION HEADER -->
+
+            <!-- SECTION CONTENT CONTAINER -->
             <div class="container-fluid sectionContent mydark-bg pd0-medium">
+
+                <!-- SUBSECTION HEADER -->
                 <div class="container smallSeparator px-0 nm-medium">
                     <div class="sectionHeader-small">
                         <h3>Dalek</h3>
                     </div>
                 </div>
+                <!-- /SUBSECTION HEADER -->
+
+                <!-- SUBSECTION CONTENT -->
                 <div class="container mylight-bg nm-medium">
                     <div class="row">
+
+                        <!-- DESCRIPTION -->
                         <div class="col-sm-12 col-md-6 col-lg-6">
                             <p class="MainText">
-                                A <b>Dalekeknek</b> nevezett idegenek talán az <b>egyik legmeghatározóbb elemei a cselekménynek.</b> 
-                                Ők és a Doktor népe – <i>az időurak</i> – egy hosszú és véres háborúban addig pusztították egymást, míg mindkét táborból csak néhányan maradtak. 
-                                A klasszikus sorozat jórésze még a háború előtt játszódik, amikor láthatjuk a Dalek faj megszületését és első felemelkedését.
+                                A <b>Dalekeknek</b> nevezett idegenek talán az <b>egyik legmeghatározóbb elemei a
+                                    cselekménynek.</b>
+                                Ők és a Doktor népe – <i>az időurak</i> – egy hosszú és véres háborúban addig
+                                pusztították egymást, míg mindkét táborból csak néhányan maradtak.
+                                A klasszikus sorozat jórésze még a háború előtt játszódik, amikor láthatjuk a Dalek faj
+                                megszületését és első felemelkedését.
                             </p>
                             <p class="MainText">
-                                Külsejükről látható, hogy a korabeli költségvetés nem volt túlságosan nagy, de abból a kevésből is ami volt rengeteget hoztak ki az alkotók. 
-                                <b>Az új sorozatban is sokszor feltűnnek</b> meghatározó szálként, bár az évadok múlásával mindig kicsit más színben.
+                                Külsejükről látható, hogy a korabeli költségvetés nem volt túlságosan nagy, de abból a
+                                kevésből is ami volt rengeteget hoztak ki az alkotók.
+                                <b>Az új sorozatban is sokszor feltűnnek</b> meghatározó szálként, bár az évadok
+                                múlásával mindig kicsit más színben.
                             </p>
                             <p class="MainText">
-                                A faj maga egy <b>laboratóriumban kitenyésztett mutáns</b>, ami fizikai korlátai miatt mechanikus szerkezetbe költözik, amit a <b>magas technológiai fejlettsége</b> segítségével épít. 
-                                Génjeibe mélyen bele van kódolva az <b>agresszió</b>, mindent el akar pusztítani, ami nem a fajába való. A Dalek faj társadalmának szerveződése és elvei sokat merítettek a Náci Németországból, 
+                                A faj maga egy <b>laboratóriumban kitenyésztett mutáns</b>, ami fizikai korlátai miatt
+                                mechanikus szerkezetbe költözik, amit a <b>magas technológiai fejlettsége</b>
+                                segítségével épít.
+                                Génjeibe mélyen bele van kódolva az <b>agresszió</b>, mindent el akar pusztítani, ami
+                                nem a fajába való. A Dalek faj társadalmának szerveződése és elvei sokat merítettek a
+                                Náci Németországból,
                                 így nem csoda, hogy ellenséges szerepet kapott.
                             </p>
                         </div>
+                        <!-- /DESCRIPTION -->
+
+                        <!-- GALLERY -->
                         <div class="col-sm-12 col-md-6 col-lg-6 my-auto">
                             <div id="dalekCarousel" class="carousel slide">
 
                                 <!-- Indicators -->
                                 <ul class="carousel-indicators">
-                                  <li data-target="#dalekCarousel" data-slide-to="0" class="active"></li>
-                                  <li data-target="#dalekCarousel" data-slide-to="1"></li>
+                                    <li data-target="#dalekCarousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#dalekCarousel" data-slide-to="1"></li>
                                 </ul>
-                                
+
                                 <!-- The slideshow -->
                                 <div class="carousel-inner">
-                                  <div class="carousel-item active">
-                                    <img src="../img/classicdalek.jpg" class="img-fluid" alt="">
-                                  </div>
-                                  <div class="carousel-item">
-                                    <img src="../img/newdalek.jpg" class="img-fluid" alt="">
-                                  </div>
+                                    <div class="carousel-item active">
+                                        <img src="../img/classicdalek.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/newdalek.jpg" class="img-fluid" alt="">
+                                    </div>
                                 </div>
-                                
+
                                 <!-- Left and right controls -->
                                 <a class="carousel-control-prev" href="#dalekCarousel" data-slide="prev">
-                                  <span class="carousel-control-prev-icon"></span>
+                                    <span class="carousel-control-prev-icon"></span>
                                 </a>
                                 <a class="carousel-control-next" href="#dalekCarousel" data-slide="next">
-                                  <span class="carousel-control-next-icon"></span>
+                                    <span class="carousel-control-next-icon"></span>
                                 </a>
-                              </div>
+                            </div>
                         </div>
+                        <!-- /GALLERY -->
                     </div>
+
                     <div class="row">
+
+                        <!-- VIDEO -->
                         <div class="col-sm-12 col-md-6 col-lg-6">
                             <div class="embed-responsive embed-responsive-4by3 media-video my-4">
                                 <video controls poster="../img/Dalek_Classic_preview.png">
                                     <source src="../media/Dalek_Classic.mp4" type="video/mp4">
-                                        A böngésző nem támogat videó lejátszást.
+                                    A böngésző nem támogat videó lejátszást.
                                 </video>
                             </div>
                         </div>
+                        <!-- /VIDEO -->
+
+                        <!-- MONSTER TABLE -->
                         <div class="col-sm-12 col-md-6 col-lg-6 m-auto py-4">
-                          <table class="m-auto py-4 monster-table">
-                              <tr>
-                                  <th colspan="2">Adatok</th>
-                              </tr>
-                              <tr>
+                            <table class="m-auto py-4 monster-table">
+                                <tr>
+                                    <th colspan="2">Adatok</th>
+                                </tr>
+                                <tr>
                                     <td>Faj neve</td>
                                     <td>Dalek</td>
-                              </tr>
-                              <tr>
+                                </tr>
+                                <tr>
                                     <td>Szülőbolygó</td>
                                     <td>Skaro</td>
-                              </tr>
-                              <tr>
+                                </tr>
+                                <tr>
                                     <td>Első megjelenés</td>
                                     <td>The Daleks (1963)</td>
-                              </tr>
-                              <tr>
+                                </tr>
+                                <tr>
                                     <td>Cél</td>
                                     <td>Elpusztítani mindent, ami nem Dalek</td>
-                              </tr>
-                          </table>  
+                                </tr>
+                            </table>
                         </div>
+                        <!-- /MONSTER TABLE -->
+
                     </div>
                 </div>
+                <!-- /SUBSECTION CONTENT -->
             </div>
+            <!-- /SECTION CONTENT CONTAINER -->
+
+            <!-- SECTION SEPARATOR -->
             <div class="sectionHeader">
                 <img src="../img/gallifreyanwriting.png" class="img-fluid" alt="">
             </div>
+            <!-- /SECTION SEPARATOR -->
+
+            <!-- SECTION CONTENT CONTAINER -->
             <div class="container-fluid sectionContent mydark-bg pd0-medium">
+
+                <!-- SUBSECTION HEADER -->
                 <div class="container smallSeparator px-0 nm-medium">
                     <div class="sectionHeader-small">
                         <h3>Kiborg</h3>
                     </div>
                 </div>
+                <!-- /SUBSECTION HEADER -->
+
+                <!-- SUBSECTION CONTENT -->
                 <div class="container mylight-bg nm-medium">
                     <div class="row">
+
+                        <!-- DESCRIPTION -->
                         <div class="col-sm-12 col-md-6 col-lg-6">
                             <p class="MainText">
-                                A kiborgok is a <b>klasszikusok óta régóta feltűnő</b> szörnyek. Ők valójában <b>nem robotok, hanem emberek</b>, akik technológiai fejlettségüknek köszönhetően <b>mechanikus testbe ültették magukat</b>, 
-                                vagy a túlélésért, vagy az örökéletért. A sorozatban első példányaik egy <i>Mondas</i> nevű bolygóról valók, de a kiborg nem egy konkrét faj, hanem egy eszme, 
-                                miszerint az <i>evolúció egy szakaszán elkerülhetetlen a mechanikus lét</i>. Így mind a klasszikus, mind a modern sorozatban feltűnnek más-más bolygókon, többek között a Földön is.
+                                A kiborgok is a <b>klasszikusok óta régóta feltűnő</b> szörnyek. Ők valójában <b>nem
+                                    robotok, hanem emberek</b>, akik technológiai fejlettségüknek köszönhetően
+                                <b>mechanikus testbe ültették magukat</b>,
+                                vagy a túlélésért, vagy az örökéletért. A sorozatban első példányaik egy <i>Mondas</i>
+                                nevű bolygóról valók, de a kiborg nem egy konkrét faj, hanem egy eszme,
+                                miszerint az <i>evolúció egy szakaszán elkerülhetetlen a mechanikus lét</i>. Így mind a
+                                klasszikus, mind a modern sorozatban feltűnnek más-más bolygókon, többek között a Földön
+                                is.
                             </p>
                             <p class="MainText">
-                                Legfőbb <b>eszméjük</b> az <b>az egység</b>, az egyéniség teljes hiánya. Ezt jelzi a <b>külsejük, a hangjuk, a mozgásuk teljes megegyezése</b>, valamint <b>érzelmeik teljes hiánya.</b> 
-                                Céljuk az univerzumban, hogy <b>mindenkit</b>, aki kompatibilis, <b>maguk formájára átalakítsanak</b>, és teljes egységet hozzanak létre.
+                                Legfőbb <b>eszméjük</b> az <b>az egység</b>, az egyéniség teljes hiánya. Ezt jelzi a
+                                <b>külsejük, a hangjuk, a mozgásuk teljes megegyezése</b>, valamint <b>érzelmeik teljes
+                                    hiánya.</b>
+                                Céljuk az univerzumban, hogy <b>mindenkit</b>, aki kompatibilis, <b>maguk formájára
+                                    átalakítsanak</b>, és teljes egységet hozzanak létre.
                             </p>
                         </div>
+                        <!-- /DESCRIPTION -->
+
+                        <!-- GALLERY -->
                         <div class="col-sm-12 col-md-6 col-lg-6 my-auto">
                             <div id="cybermanCarousel" class="carousel slide">
 
                                 <!-- Indicators -->
                                 <ul class="carousel-indicators">
-                                  <li data-target="#cybermanCarousel" data-slide-to="0" class="active"></li>
-                                  <li data-target="#cybermanCarousel" data-slide-to="1"></li>
+                                    <li data-target="#cybermanCarousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#cybermanCarousel" data-slide-to="1"></li>
                                 </ul>
-                                
+
                                 <!-- The slideshow -->
                                 <div class="carousel-inner">
-                                  <div class="carousel-item active">
-                                    <img src="../img/Cyberman_Classic.jpg" class="img-fluid" alt="">
-                                  </div>
-                                  <div class="carousel-item">
-                                    <img src="../img/newcyborg.jpg" class="img-fluid" alt="">
-                                  </div>
+                                    <div class="carousel-item active">
+                                        <img src="../img/Cyberman_Classic.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/newcyborg.jpg" class="img-fluid" alt="">
+                                    </div>
                                 </div>
-                                
+
                                 <!-- Left and right controls -->
                                 <a class="carousel-control-prev" href="#cybermanCarousel" data-slide="prev">
-                                  <span class="carousel-control-prev-icon"></span>
+                                    <span class="carousel-control-prev-icon"></span>
                                 </a>
                                 <a class="carousel-control-next" href="#cybermanCarousel" data-slide="next">
-                                  <span class="carousel-control-next-icon"></span>
+                                    <span class="carousel-control-next-icon"></span>
                                 </a>
-                              </div>
+                            </div>
                         </div>
+                        <!-- /GALLERY -->
+
                     </div>
                     <div class="row">
+
+                        <!-- VIDEO -->
                         <div class="col-sm-12 col-md-6 col-lg-6">
                             <div class="embed-responsive embed-responsive-4by3 media-video my-4">
                                 <video controls poster="../img/Cybermen_Classic_preview.png">
                                     <source src="../media/Cybermen_Classic.mp4" type="video/mp4">
-                                        A böngésző nem támogat videó lejátszást.
+                                    A böngésző nem támogat videó lejátszást.
                                 </video>
                             </div>
                         </div>
+                        <!-- /VIDEO -->
+
+                        <!-- MONSTER TABLE -->
                         <div class="col-sm-12 col-md-6 col-lg-6 m-auto py-4">
-                          <table class="m-auto py-4 monster-table">
-                              <tr>
-                                  <th colspan="2">Adatok</th>
-                              </tr>
-                              <tr>
+                            <table class="m-auto py-4 monster-table">
+                                <tr>
+                                    <th colspan="2">Adatok</th>
+                                </tr>
+                                <tr>
                                     <td>Faj neve</td>
                                     <td>Kiborg</td>
-                              </tr>
-                              <tr>
+                                </tr>
+                                <tr>
                                     <td>Szülőbolygó</td>
                                     <td>Mondas</td>
-                              </tr>
-                              <tr>
+                                </tr>
+                                <tr>
                                     <td>Első megjelenés</td>
                                     <td>The tenth planet <i>(1966)</i></td>
-                              </tr>
-                              <tr>
+                                </tr>
+                                <tr>
                                     <td>Cél</td>
                                     <td>Minden embert kiborggá alakítani</td>
-                              </tr>
-                          </table>  
+                                </tr>
+                            </table>
                         </div>
+                        <!-- MONSTER TABLE -->
                     </div>
                 </div>
+                <!-- SUBSECTION CONTENT -->
             </div>
+            <!-- /SECTION CONTENT CONTAINER -->
+
         </section>
+        <!-- /MONSTERS SECTION -->
+
+        <!-- NEWSLETTER -->
         <section id="hirlevel">
             <h2>Íratkozz fel hírlevelünkre</h2>
             <hr>
             <div class="container">
                 <p>
-                Ne maradj le legfrissebb sorozattal, rendezvényekkel, összejövetelekkel, nyereményekkel kapcsolatos híreinkről! A lentebb megtalálható űrlap segítségével feliratkozhatsz hírlevelünkre, 
-                így biztosan nem maradsz le semmiről, akkor sem, ha a weblapot már régóta nem látogattad. Biztos lehetsz benne, hogy adataid megbízhatóan kezeljük!
+                    Ne maradj le legfrissebb sorozattal, rendezvényekkel, összejövetelekkel, nyereményekkel kapcsolatos
+                    híreinkről! A lentebb megtalálható űrlap segítségével feliratkozhatsz hírlevelünkre,
+                    így biztosan nem maradsz le semmiről, akkor sem, ha a weblapot már régóta nem látogattad. Biztos
+                    lehetsz benne, hogy adataid megbízhatóan kezeljük!
                 </p>
                 <div class="container text-center">
+                    <!-- SUBSCRIBE FORM -->
                     <form action="mailto:vmt982@inf.elte.hu" method="POST" enctype="text/plain">
                         <fieldset>
-                        <legend>Adatok</legend>
-                        <label for="nevInput">Add meg a teljes neved</label><br>
-                        <input type="text" name="nev" id="nevInput" size="50" placeholder="Név:" maxlength="40" required class="textInput"><br>
-                        <label for="emailInput">Add meg az Email címed, amin értesíthetünk</label><br>
-                        <input type="email" name="email" id="emailInput" size="50" placeholder="Email cím:" maxlength="40" class="textInput" required>
+                            <legend>Adatok</legend>
+                            <label for="nevInput">Add meg a teljes neved</label><br>
+                            <input type="text" name="nev" id="nevInput" size="50" placeholder="Név:" maxlength="40"
+                                required class="textInput"><br>
+                            <label for="emailInput">Add meg az Email címed, amin értesíthetünk</label><br>
+                            <input type="email" name="email" id="emailInput" size="50" placeholder="Email cím:"
+                                maxlength="40" class="textInput" required>
                         </fieldset>
                         <fieldset>
                             <legend>Nyeremények</legend>
                             <label for="v1">Híreken kívül értékes nyereményekkel is felkeresnénk téged</label><br>
-                            <input type="radio" name="nyeremeny" id="v1" value="1"><label id="lv1" for="v1">Érdekel</label>
-                            <input type="radio" name="nyeremeny" id="v2" value="2" checked><label id="lv2" for="v2">Nem érdekel</label>
+                            <input type="radio" name="nyeremeny" id="v1" value="1"><label id="lv1"
+                                for="v1">Érdekel</label>
+                            <input type="radio" name="nyeremeny" id="v2" value="2" checked><label id="lv2" for="v2">Nem
+                                érdekel</label>
                         </fieldset>
                         <fieldset>
-                        <legend>Érdekeltség</legend>
-                        <label for="erdekeltseg">Ha van időd add meg milyen az oldallal kapcsolatos hírekre lennél kíváncsi</label><br>
-                        <textarea name="erdekeltseg" id="erdekeltseg" cols="60" rows="6" maxlength="250" class="textInput"></textarea><br>
+                            <legend>Érdekeltség</legend>
+                            <label for="erdekeltseg">Ha van időd add meg milyen az oldallal kapcsolatos hírekre lennél
+                                kíváncsi</label><br>
+                            <textarea name="erdekeltseg" id="erdekeltseg" cols="60" rows="6" maxlength="250"
+                                class="textInput"></textarea><br>
                         </fieldset>
                         <label for="elfogad">
                             <input type="checkbox" name="elfogad" id="elfogad" value="igen" required>
@@ -339,20 +474,32 @@
                             <input type="reset" value="Töröl" class="myformButton">
                         </fieldset>
                     </form>
+                    <!-- /SUBSCRIBE FORM -->
                 </div>
             </div>
         </section>
-        <footer>
-                <a href="https://www.facebook.com/DoctorWho/"><i class="fab fa-facebook-square"></i> Facebook</a>
-                <h1>Whoniverse</h1>
-                <a href="https://www.youtube.com/user/doctorwho"><i class="fab fa-youtube"></i> Youtube</a>
-        </footer>
-    </div>
+        <!-- /NEWSLETTER -->
 
-    
-      <!-- BOOTSTRAP JS -->
-      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <!-- FOOTER -->
+        <footer>
+            <a href="https://www.facebook.com/DoctorWho/"><i class="fab fa-facebook-square"></i> Facebook</a>
+            <h1>Whoniverse</h1>
+            <a href="https://www.youtube.com/user/doctorwho"><i class="fab fa-youtube"></i> Youtube</a>
+        </footer>
+        <!-- /FOOTER -->
+    </div>
+    <!-- /CONTENT CONTAINER -->
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
