@@ -41,6 +41,23 @@
     font-size: 1.5em !important;
 }
 
+.navbar .dropdown-menu{
+    background-color: #000;
+}
+
+.facebook-link:hover{
+    background-color: #4267B2;
+}
+
+.youtube-link:hover{
+    background-color: #FF0000;
+}
+
+.wiki-link:hover{
+    background-color: #fff;
+    color: #000 !important;
+}
+
 /* ================HERO STYLE===================*/
 
 .hero-element{
@@ -62,6 +79,11 @@
 
 .h-doctors{
     background-image: url("../img/alldoctors.png");
+    background-position: center top;
+}
+
+.h-newWho{
+    background-image: url("../img/NewWhoHero.jpg");
     background-position: center top;
 }
 
