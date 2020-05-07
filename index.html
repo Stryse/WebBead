@@ -1,316 +1,480 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Whoniverse - Kezdőlap</title>
+
     <!--BOOTSTRAP-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--/BOOTSTRAP-->
+
     <!--CUSTOM CSS-->
     <link rel="stylesheet" href="./css/style.css">
+    <!--/CUSTOM CSS-->
+
     <!--FONTS-->
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!--/FONTS-->
+
     <!--FONTAWESOME (ICONS)-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!--/FONTAWESOME (ICONS)-->
 </head>
+
 <body>
     
+    <!-- NAVBAR TOP -->
     <header>
-    <nav class="navbar navbar-dark navbar-expand-md fixed-top">
-        <!-- Brand -->
-        <a class="navbar-brand" href="#"><img src="./img/TardisLogo.png" alt="Weblap logó"></a>
-        
-        <!-- WHONIVERSE TITLE - ONLY ON SMALL SCREEN -->
-        <p class="d-md-none text-white" id="smallNavText">Whoniverse</p>
+        <nav class="navbar navbar-dark navbar-expand-md fixed-top">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#"><img src="./img/TardisLogo.png" alt=""></a>
+            <!-- alt empty Decorative -->
 
-        <!-- Toggler/collapsibe Button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <!-- NAVBAR LINKS - COLLAPSED ON SMALL SCREEN -->
-        <div class="collapse navbar-collapse" id="mainNavbar">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Kezdőlap</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./html/classic.html">Classic</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./html/newWho.html">NewWho</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./html/dokik.html">Dokik</a>
-            </li>
-          </ul>
-          <!-- LINKS - HIDDEN ON MEDIUM SCREEN -->
-          <ul class="navbar-nav ml-auto d-md-none d-lg-flex">
-            <li class="nav-item">
-                <a class="nav-link" href="https://www.facebook.com/DoctorWho/">Facebook <i class="fab fa-facebook-square"></i></a>
-              </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://www.youtube.com/user/doctorwho">Youtube <i class="fab fa-youtube"></i></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://hu.wikipedia.org/wiki/Ki_vagy,_doki%3F">Wikipedia <i class="fab fa-wikipedia-w"></i></a>
-            </li>
-          </ul>
-          <!-- LINKS DROPDOWN ON MEDIUM SCREEN -->
-          <div class="navbar-nav ml-auto d-none d-md-block d-lg-none dropdown mr-4">
-                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Továbbiak
-                </a>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item facebook-link" href="https://www.facebook.com/DoctorWho/">Facebook <i class="fab fa-facebook-square"></i></a>
-                    <a class="dropdown-item youtube-link" href="https://www.youtube.com/user/doctorwho">Youtube <i class="fab fa-youtube"></i></a>
-                    <a class="dropdown-item wiki-link" href="https://hu.wikipedia.org/wiki/Ki_vagy,_doki%3F">Wikipedia <i class="fab fa-wikipedia-w"></i></a>
+            <!-- WHONIVERSE TITLE - ONLY ON SMALL SCREEN -->
+            <p class="d-md-none text-white" id="smallNavText">Whoniverse</p>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- NAVBAR LINKS - COLLAPSED ON SMALL SCREEN -->
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Kezdőlap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./html/classic.html">Classic</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./html/newWho.html">NewWho</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./html/dokik.html">Dokik</a>
+                    </li>
+                </ul>
+
+                <!-- LINKS - HIDDEN ON MEDIUM SCREEN -->
+                <ul class="navbar-nav ml-auto d-md-none d-lg-flex">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.facebook.com/DoctorWho/">Facebook <i
+                                class="fab fa-facebook-square"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.youtube.com/user/doctorwho">Youtube <i
+                                class="fab fa-youtube"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://hu.wikipedia.org/wiki/Ki_vagy,_doki%3F">Wikipedia <i
+                                class="fab fa-wikipedia-w"></i></a>
+                    </li>
+                </ul>
+                <!-- /LINKS - HIDDEN ON MEDIUM SCREEN -->
+
+                <!-- LINKS DROPDOWN ON MEDIUM SCREEN -->
+                <div class="navbar-nav ml-auto d-none d-md-block d-lg-none dropdown mr-4">
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Továbbiak
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item facebook-link" href="https://www.facebook.com/DoctorWho/">Facebook <i
+                                class="fab fa-facebook-square"></i></a>
+                        <a class="dropdown-item youtube-link" href="https://www.youtube.com/user/doctorwho">Youtube <i
+                                class="fab fa-youtube"></i></a>
+                        <a class="dropdown-item wiki-link"
+                            href="https://hu.wikipedia.org/wiki/Ki_vagy,_doki%3F">Wikipedia <i
+                                class="fab fa-wikipedia-w"></i></a>
+                    </div>
                 </div>
-          </div>
-        </div>
-      </nav>
+                <!-- /LINKS DROPDOWN ON MEDIUM SCREEN -->
+
+            </div>
+            <!-- /NAVBAR LINKS - COLLAPSED ON SMALL SCREEN -->
+        </nav>
     </header>
-    
-      <div class="container-fluid hero-element h-main">
+    <!-- /NAVBAR TOP -->
+
+    <!-- CONTENT CONTAINER -->
+    <div class="container-fluid hero-element h-main">
+
+        <!-- HERO ELEMENT -->
         <div id="PageTitleHero">
-        <h1><span id="T_First">Whoniverse</span><br><span id="T_Second">Doctor Who rajongói oldal</span></h1>
+            <h1><span id="T_First">Whoniverse</span><br><span id="T_Second">Doctor Who rajongói oldal</span></h1>
         </div>
+        <!-- /HERO ELEMENT -->
+
+        <!-- /MAIN PAGE SECTION -->
         <section>
+
+            <!-- SECTION HEADER -->
             <div class="sectionHeader">
                 <div class="w-100">
                     <div id="kezdolaptitle">
-                        <h2>Kezdőlap</h2>
-                        <img src="./img/DalekSmall.png" class="img-fluid d-none d-md-block" alt=""> <!-- alt empty Decorative -->
-                        <img src="./img/TardisSmall.png" class="img-fluid d-none d-md-block" alt=""> <!-- alt empty Decorative -->
-                        <img src="./img/AngelSmall.png" class="img-fluid d-none d-md-block" alt=""> <!-- alt empty Decorative -->
+                        <h2>Kezdőlap</h2> <!-- SECTION TITLE -->
+                        <img src="./img/DalekSmall.png" class="img-fluid d-none d-md-block" alt="">
+                        <!-- alt empty Decorative -->
+                        <img src="./img/TardisSmall.png" class="img-fluid d-none d-md-block" alt="">
+                        <!-- alt empty Decorative -->
+                        <img src="./img/AngelSmall.png" class="img-fluid d-none d-md-block" alt="">
+                        <!-- alt empty Decorative -->
                     </div>
                     <hr>
-                    <h3>Doctor Who: A sorozat</h3>
+                    <h3>Doctor Who: A sorozat</h3> <!-- SECTION STITLE -->
                 </div>
             </div>
+            <!-- /SECTION HEADER -->
+
+            <!-- SECTION CONTENT CONTAINER -->
             <div class="container-fluid sectionContent">
                 <div class="row">
                     <div class="col-sm-12 col-md-7 col-lg-6 m-auto">
+                        <!-- DOCTOR WHO ARTICLE-->
                         <article>
-                        <h2>Ki vagy, doki? Ismertető</h2>
-                        <p>A <b>Ki vagy, doki?</b> <i>(Doctor Who)</i> a világ egyik leghosszabb ideje futó brit televíziós  sci-fi sorozata.
-                        Egy földönkívüli időutazóról szól, aki magát a „<b>Doktornak</b>” nevezi, és a <b>TARDIS</b> <i>(Time And Relative Dimensions In Space)</i> nevű időgépével utazik térben és időben, mindenféle kalandokba keveredve.
-                        <span class="d-md-none d-lg-block">Legtöbbször nem egyedül teszi ezt, hanem egy-egy kísérővel, aki időről időre változik, csakúgy ,mint maga a Doktor külsője.
-                        A sorozat hatalmas népszerűségre tett szert világszerte, és ma is a brit popkultúra egyik központi eleme.</span></p>
+                            <h2>Ki vagy, doki? Ismertető</h2>
+                            <!-- SHOW ALL SCREEN -->
+                            <p>A <b>Ki vagy, doki?</b> <i>(Doctor Who)</i> a világ egyik leghosszabb ideje futó brit
+                                televíziós sci-fi sorozata.
+                                Egy földönkívüli időutazóról szól, aki magát a „<b>Doktornak</b>” nevezi, és a
+                                <b>TARDIS</b> <i>(Time And Relative Dimensions In Space)</i> nevű időgépével utazik
+                                térben és időben, mindenféle kalandokba keveredve.
+                            <!-- /SHOW ALL SCREEN -->
+                                <!-- HIDE ON MEDIUM -->
+                                <span class="d-md-none d-lg-block">Legtöbbször nem egyedül teszi ezt, hanem egy-egy
+                                    kísérővel, aki időről időre változik, csakúgy ,mint maga a Doktor külsője.
+                                    A sorozat hatalmas népszerűségre tett szert világszerte, és ma is a brit popkultúra
+                                    egyik központi eleme.</span></p>
+                                <!-- /HIDE ON MEDIUM -->
                         </article>
+                        <!-- /DOCTOR WHO ARTICLE-->
                     </div>
                     <div class="col-sm-12 col-md-5 col-lg-6 mediaArea m-auto">
-                        <p id="trailerCaption">Előzetes<p> <!-- TODO normális tag-->
-                            <div class="embed-responsive embed-responsive-16by9 media-video">
-                                <video controls poster="./img/video_preview.png">
-                                    <source src="./media/Doctor_Who_Trailer.mp4" type="video/mp4">
+                        <!-- TRAILER VIDEO -->
+                        <p id="trailerCaption">Előzetes<p>
+                                <div class="embed-responsive embed-responsive-16by9 media-video">
+                                    <video controls poster="./img/video_preview.png">
+                                        <source src="./media/Doctor_Who_Trailer.mp4" type="video/mp4">
                                         A böngésző nem támogat videó lejátszást.
-                                </video>
-                            </div>                              
+                                    </video>
+                                </div>
+                        <!-- /TRAILER VIDEO -->
                     </div>
                 </div>
                 <div class="row d-none d-md-block d-lg-none m-auto">
-                    <article> <!-- FOR MEDIUM SCREEN RESPONSIVE -->
+                    <!-- DOCTOR WHO ARTICLE EXTENSION ON MEDIUM SCREEN -->
+                    <article>
                         <h2 class="d-none">Ki vagy, doki? Ismertető</h2>
-                        <p><span class="d-none">A <b>Ki vagy, doki?</b> <i>(Doctor Who)</i> a világ egyik leghosszabb ideje futó brit televíziós  sci-fi sorozata.
-                        Egy földönkívüli időutazóról szól, aki magát a „<b>Doktornak</b>” nevezi, és a <b>TARDIS</b> <i>(Time And Relative Dimensions In Space)</i> nevű időgépével utazik térben és időben, mindenféle kalandokba keveredve.
-                        </span>Legtöbbször nem egyedül teszi ezt, hanem egy-egy kísérővel, aki időről időre változik, csakúgy ,mint maga a Doktor külsője.
-                        A sorozat hatalmas népszerűségre tett szert világszerte, és ma is a brit popkultúra egyik központi eleme.</p>
+                        <!-- HIDE ALL -->
+                        <p><span class="d-none">A <b>Ki vagy, doki?</b> <i>(Doctor Who)</i> a világ egyik leghosszabb
+                                ideje futó brit televíziós sci-fi sorozata.
+                                Egy földönkívüli időutazóról szól, aki magát a „<b>Doktornak</b>” nevezi, és a
+                                <b>TARDIS</b> <i>(Time And Relative Dimensions In Space)</i> nevű időgépével utazik
+                                térben és időben, mindenféle kalandokba keveredve.
+                        <!-- /HIDE ALL -->
+                        <!-- SHOW MEDIUM ONLY -->
+                            </span>Legtöbbször nem egyedül teszi ezt, hanem egy-egy kísérővel, aki időről időre
+                            változik, csakúgy ,mint maga a Doktor külsője.
+                            A sorozat hatalmas népszerűségre tett szert világszerte, és ma is a brit popkultúra egyik
+                            központi eleme.</p>
+                        <!-- /SHOW MEDIUM ONLY -->
                     </article>
+                    <!-- /DOCTOR WHO ARTICLE EXTENSION ON MEDIUM SCREEN -->
                 </div>
             </div>
+            <!-- /SECTION CONTENT CONTAINER -->
+
+            <!-- SECTION SEPARATOR -->
             <div id="gallifreyImageBackground">
-            <img src="./img/Gallifrey.png" class="img-fluid m-auto" alt=""> <!-- alt empty Decorative -->
+                <img src="./img/Gallifrey.png" class="img-fluid m-auto" alt=""> <!-- alt empty Decorative -->
             </div>
+            <!-- SECTION SEPARATOR -->
+            
         </section>
+        <!-- /MAIN PAGE SECTION -->
+
+        <!-- IMPORTANCE SECTION -->
         <section>
+
+            <!-- SECTION HEADER -->
             <div class="sectionHeader">
                 <div class="w-100">
                     <div class="container-fluid d-flex">
                         <div class="col-sm-8 d-none d-md-block">
+                                <!-- SECTION TITLE STILL SAME AS ABOVE -->
                             <div class="mt-auto mb-auto">
-                            <img src="./img/exclamationmark.png" class="img-fluid" alt=""> <!-- alt empty Decorative -->
+                                <img src="./img/exclamationmark.png" class="img-fluid" alt="">
+                                <!-- alt empty Decorative -->
                             </div>
                         </div>
                         <div class="col-sm-4 sectionSepImgContainer d-none d-md-flex">
                             <div class="mt-auto mb-auto">
-                            <img src="./img/gallifreyanwriting.png" class="img-fluid" alt=""> <!-- alt empty Decorative -->
+                                <img src="./img/gallifreyanwriting.png" class="img-fluid" alt="">
+                                <!-- alt empty Decorative -->
                             </div>
                         </div>
                     </div>
                     <hr>
-                    <h3>Jelentősége</h3>
+                    <h3>Jelentősége</h3> <!-- SECTION STITLE -->
                 </div>
             </div>
+            <!-- /SECTION HEADER -->
+
+            <!-- SECTION CONTENT CONTAINER -->
             <div class="container-fluid sectionContent">
                 <div class="row">
                     <div class="col-sm-12 col-md-5 col-lg-6 m-auto">
+                        <!-- SHOW ALL SCREEN -->
                         <p class="MainText">
-                        A sorozat ikonikus elemei – mint például a <i>TARDIS</i> időgép – rengeteg helyen megtalálhatóak Nagy-Britanniában: az utcákon, kávézókban, ajándékboltokban, ráadásul, 
-                        ha ott járunk könnyen belecsöppenhetünk egy aktív forgatásába is a sorozat egy epizódjának.
+                            A sorozat ikonikus elemei – mint például a <i>TARDIS</i> időgép – rengeteg helyen
+                            megtalálhatóak Nagy-Britanniában: az utcákon, kávézókban, ajándékboltokban, ráadásul,
+                            ha ott járunk könnyen belecsöppenhetünk egy aktív forgatásába is a sorozat egy epizódjának.
                         </p>
+                        <!-- /SHOW ALL SCREEN -->
+                        <!-- HIDE ON MEDIUM -->
                         <p class="MainText d-md-none d-lg-block">
-                        Akármerre is járunk a világban, ha bemegyünk egy sci-fivel kapcsolatos rendezvényre, ott biztosan megtaláljuk a <i>Doctor Who</i> képviselőit, hiszen hatalmas rajongótábor alakult ki a sorozat körül. 
-                        Nem csak fiatalok, hanem az idősek között is egy ismert sorozatról van szó, hiszen <b>gyökerei visszanyúlnak egészen az 1960-as évekbe</b>, sőt a mai alkotói, és színészei között sokan együtt nőttek fel a sorozat klasszikus szakaszával.
+                            Akármerre is járunk a világban, ha bemegyünk egy sci-fivel kapcsolatos rendezvényre, ott
+                            biztosan megtaláljuk a <i>Doctor Who</i> képviselőit, hiszen hatalmas rajongótábor alakult
+                            ki a sorozat körül.
+                            Nem csak fiatalok, hanem az idősek között is egy ismert sorozatról van szó, hiszen
+                            <b>gyökerei visszanyúlnak egészen az 1960-as évekbe</b>, sőt a mai alkotói, és színészei
+                            között sokan együtt nőttek fel a sorozat klasszikus szakaszával.
                         </p>
+                        <!-- /HIDE ON MEDIUM -->
                     </div>
                     <div class="col-sm-12 col-md-7 col-lg-6 d-flex m-auto">
                         <a href="./img/tardis_on_street.jpg" id="tardisOnStreet" class="preview">
                             <figure>
-                            <img src="./img/tardis_on_street_thumbnail.jpg" alt="TARDIS a Doctor Who sorozatból London utcáin" class="img-fluid mx-auto">
-                            <figcaption>TARDIS a Doctor Who sorozatból London utcáin</figcaption>
+                                <img src="./img/tardis_on_street_thumbnail.jpg"
+                                    alt="TARDIS a Doctor Who sorozatból London utcáin" class="img-fluid mx-auto">
+                                <figcaption>TARDIS a Doctor Who sorozatból London utcáin</figcaption>
                             </figure>
                         </a>
                     </div>
-                    </div>
+                </div>
                 <div class="row m-auto">
+                    <!-- SHOW MEDIUM ONLY -->
                     <p class="MainText d-none d-md-block d-lg-none">
-                        Akármerre is járunk a világban, ha bemegyünk egy sci-fivel kapcsolatos rendezvényre, ott biztosan megtaláljuk a <i>Doctor Who</i> képviselőit, hiszen hatalmas rajongótábor alakult ki a sorozat körül. 
-                        Nem csak fiatalok, hanem az idősek között is egy ismert sorozatról van szó, hiszen <b>gyökerei visszanyúlnak egészen az 1960-as évekbe</b>, sőt a mai alkotói, és színészei között sokan együtt nőttek fel a sorozat klasszikus szakaszával.
+                        Akármerre is járunk a világban, ha bemegyünk egy sci-fivel kapcsolatos rendezvényre, ott
+                        biztosan megtaláljuk a <i>Doctor Who</i> képviselőit, hiszen hatalmas rajongótábor alakult ki a
+                        sorozat körül.
+                        Nem csak fiatalok, hanem az idősek között is egy ismert sorozatról van szó, hiszen <b>gyökerei
+                            visszanyúlnak egészen az 1960-as évekbe</b>, sőt a mai alkotói, és színészei között sokan
+                        együtt nőttek fel a sorozat klasszikus szakaszával.
                     </p>
+                    <!-- /SHOW MEDIUM ONLY -->
+                    <!-- SHOW ALL SCREEN -->
                     <p class="MainText">
-                        Emellett a főszereplő – <b>a Doktor – szerepe egy rendkívül nívós és elismert szerep</b> a brit filmművészetben és kultúrában, így bárkinek, akit kiválasztanak rá hatalmas elvárásokkal kell szembenéznie mind színészi, mind a rajongókkal való kapcsolat térén.
-                        Az új Doktor kiválasztása mindig egy nagyon várt és ünnepélyes esemény a brit televízióban, és a színész kiválasztását rendszerint hosszú és nehéz titokban tartás időszaka követi.
+                        Emellett a főszereplő – <b>a Doktor – szerepe egy rendkívül nívós és elismert szerep</b> a brit
+                        filmművészetben és kultúrában, így bárkinek, akit kiválasztanak rá hatalmas elvárásokkal kell
+                        szembenéznie mind színészi, mind a rajongókkal való kapcsolat térén.
+                        Az új Doktor kiválasztása mindig egy nagyon várt és ünnepélyes esemény a brit televízióban, és a
+                        színész kiválasztását rendszerint hosszú és nehéz titokban tartás időszaka követi.
                     </p>
+                    <!-- /SHOW ALL SCREEN -->
                 </div>
             </div>
+            <!-- /SECTION CONTENT CONTAINER -->
+
         </section>
-        <section>  
+        <!-- /IMPORTANCE SECTION -->
+
+        <!-- GUIDE SECTION -->
+        <section>
+
+            <!-- SECTION HEADER -->
             <div class="sectionHeader">
                 <div class="w-100">
-                    <img src="./img/map.png" class="img-fluid position-absolute d-none d-md-block" alt=""> <!-- alt empty Decorative -->
+                    <img src="./img/map.png" class="img-fluid position-absolute d-none d-md-block" alt="">
+                    <!-- alt empty Decorative -->
                     <div class="container-fluid d-flex jc">
                         <div class="col-sm-8">
-                            <h2>Útmutató a sorozathoz</h2>
+                            <h2>Útmutató a sorozathoz</h2> <!-- SECTION TITLE -->
                         </div>
                         <div class="col-sm-4 sectionSepImgContainer d-none d-md-flex">
                             <div class="mt-auto mb-auto">
-                                <img src="./img/gallifreyanwriting.png" class="img-fluid" alt=""> <!-- alt empty Decorative -->
+                                <img src="./img/gallifreyanwriting.png" class="img-fluid" alt="">
+                                <!-- alt empty Decorative -->
                             </div>
                         </div>
                     </div>
                     <hr>
-                    <h3>38 évad, hol kezdjem? ...</h3>
+                    <h3>38 évad, hol kezdjem? ...</h3> <!-- SECTION STITLE -->
                 </div>
             </div>
+            <!-- /SECTION HEADER -->
+
+            <!-- SECTION CONTENT CONTAINER -->
             <div class="container-fluid sectionContent">
+
+                <!-- SHOW ALL SCREEN -->
                 <p class="MainText">
-                    A sorozat szerkezetét tekintve két nagyobb részre bontható, de ezeken belül is megkülönböztetünk szakaszokat.
-                    A <b>klasszikus Doctor Who</b><i> (Doctor Who Classic)</i> az eredeti <b>1963-tól 1989-ig</b> futó sorozat, amelynek sajnos egy része részben a <b>BBC gondatlansága miatt elveszett</b>, és ma is keresik.
-                    Az igazi keményvonalas rajongók számára kötelező darab, viszont aki most csatlakozna be annak lehet kicsit keményfalat, hiszen a mai korszerű sorozatokhoz képest sokkal elavultabb, alacsony felbontású, fekete-fehér (eleinte), és mai szemmel nehezen emészthető.
-                    Ennek ellenére a története és csavarjai időtállók, így, ha valaki érzi magában a kitartást annak könnyedén javasoljuk.
+                    A sorozat szerkezetét tekintve két nagyobb részre bontható, de ezeken belül is megkülönböztetünk
+                    szakaszokat.
+                    A <b>klasszikus Doctor Who</b><i> (Doctor Who Classic)</i> az eredeti <b>1963-tól 1989-ig</b> futó
+                    sorozat, amelynek sajnos egy része részben a <b>BBC gondatlansága miatt elveszett</b>, és ma is
+                    keresik.
+                    Az igazi keményvonalas rajongók számára kötelező darab, viszont aki most csatlakozna be annak lehet
+                    kicsit keményfalat, hiszen a mai korszerű sorozatokhoz képest sokkal elavultabb, alacsony
+                    felbontású, fekete-fehér (eleinte), és mai szemmel nehezen emészthető.
+                    Ennek ellenére a története és csavarjai időtállók, így, ha valaki érzi magában a kitartást annak
+                    könnyedén javasoljuk.
                 </p>
                 <p class="MainText">
-                    A legtöbben <b>a sorozat 2005-ös újjáélesztésével</b> találkoznak, ami egy <b>biztos pont a kezdésnek,</b> hiszen újra felépíti az egész univerzumot, és megismerteti az eddig – klasszikus sorozatban – történteket,
-                     emellett rengeteg elemet átültet és tovább gondol abból, így a néző valamelyest betekintést nyer az öreg klasszikusba is 26 évad végig pörgetése nélkül. 
-                     Ez viszont még mindig – jelen állás szerint – 12 évad, ami sok lehet egy nem túl elkötelezett nézőnek. Mindenképpen ez a 2005-ös NewWho 1. évad a legstabilabb kezdés egy leendő rajongónak, 
-                     de ha ez a 12 évad még mindig sok, van egy utolsó mentsvár: <b>a <i>2010-es</i> 5. évad, ahol a NewWho második szakasza kezdődik.</b> Itt ismét egy új vonalat vet a sorozat, sokat mutat a múltjából is, 
-                     de könnyedén követhető egy új néző számára is. <b>A harmadik szakaszt</b> <i>(2018 - )</i> <b>semmiképpen nem ajánljuk</b> hiszen az még annyira új, hogy nem adja át önmagában a sorozat egyedi érzetét.
+                    A legtöbben <b>a sorozat 2005-ös újjáélesztésével</b> találkoznak, ami egy <b>biztos pont a
+                        kezdésnek,</b> hiszen újra felépíti az egész univerzumot, és megismerteti az eddig – klasszikus
+                    sorozatban – történteket,
+                    emellett rengeteg elemet átültet és tovább gondol abból, így a néző valamelyest betekintést nyer az
+                    öreg klasszikusba is 26 évad végig pörgetése nélkül.
+                    Ez viszont még mindig – jelen állás szerint – 12 évad, ami sok lehet egy nem túl elkötelezett
+                    nézőnek. Mindenképpen ez a 2005-ös NewWho 1. évad a legstabilabb kezdés egy leendő rajongónak,
+                    de ha ez a 12 évad még mindig sok, van egy utolsó mentsvár: <b>a <i>2010-es</i> 5. évad, ahol a
+                        NewWho második szakasza kezdődik.</b> Itt ismét egy új vonalat vet a sorozat, sokat mutat a
+                    múltjából is,
+                    de könnyedén követhető egy új néző számára is. <b>A harmadik szakaszt</b> <i>(2018 - )</i>
+                    <b>semmiképpen nem ajánljuk</b> hiszen az még annyira új, hogy nem adja át önmagában a sorozat
+                    egyedi érzetét.
                 </p>
 
                 <p class="MainText">
-                    A lenti táblázatban áttekintheted a sorozat szakaszait, és megjelöltük neked az ajánlott kiinduló pontokat.
+                    A lenti táblázatban áttekintheted a sorozat szakaszait, és megjelöltük neked az ajánlott kiinduló
+                    pontokat.
                 </p>
+                <!-- /SHOW ALL SCREEN -->
 
-                    <table class="table-striped" id="szakaszTable">
-                        <caption>
-                            A Doctor Who sorozat szakaszai
-                            <details>
-                                <summary>Összefoglalás, színek jelentése</summary>
-                                <hr>
-                                <p>A táblázat szemlélteti a két összetartozó sorozat Doctor Who (NewWho) és (Doctor Who Classic) szakaszait, 
-                                    főszereplőit, az évadaik és epizódjaik számait.</p>
-                                <p>A fenti színezés az alábbiakat jelenti:</p>
-                                <ul>
-                                    <li><span class="table-notrecommended">Piros: </span>Kezdésnek <b>nem ajánljuk</b></li>
-                                    <li><span class="table-mild-recommended">Sárga: </span>Kezdésnek <b>ajánljuk</b></li>
-                                    <li><span class="table-recommended">Zöld: </span>Kezdésnek <b>nagyon ajánljuk</b></li>
-                                </ul>
-                            </details>
-                        </caption>
-                        <tr>
-                            <th>Classic</th>
-                            <th colspan="3">NewWho</th>
-                        </tr>
-                        <tr>
-                            <td class="table-mild-recommended-bg"><b>Nem összefüggő</b><br>(elveszett részek)</td>
-                            <td class="table-recommended-bg"><b>Első szakasz<br>(2005-2009)</b><br>Russel T Davies<br>(showrunner)</td>
-                            <td class="table-mild-recommended-bg"><b>Második szakasz<br>(2010-2017)</b><br>Steven Moffat<br>(showrunner)</td>
-                            <td class="table-notrecommended-bg"><b>Harmadik szakasz<br>(2018 - )</b><br>Chris Chibnall<br>(showrunner)</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <b>Doktorok:</b>
-                                <ul>
-                                    <li>William Hartnell</li>
-                                    <li>Patrick Troughton</li>
-                                    <li>Jon Pertwee</li>
-                                    <li>Tom Baker</li>
-                                    <li>Peter Davison</li>
-                                    <li>Colin Baker</li>
-                                    <li>Sylvester McCoy</li>
-                                    <li>Paul McGann</li>
-                                </ul>
-                            </td>
-                            <td>
-                                <b>Doktorok:</b>
-                                <ul>
-                                    <li>Christopher Eccleston</li>
-                                    <li>David Tennant</li>
-                                </ul>
-                            </td>
-                            <td>
-                                <b>Doktorok:</b>
-                                <ul>
-                                    <li>Matt Smith</li>
-                                    <li>Peter Capaldi</li>
-                                </ul>
-                            </td>
-                            <td>
-                                <b>Doktorok:</b>
-                                <ul>
-                                    <li>Jodie Whittaker</li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>26 évad, 859 rész</td>
-                            <td>4 évad, 52 rész</td>
-                            <td>6 évad, 75 rész</td>
-                            <td>2 évad, 20 rész</td>
-                        </tr>
-                    </table>
+                <!-- DOCTOR WHO ERAS TABLE-->
+                <table class="table-striped" id="szakaszTable">
+
+                    <!-- TABLE CAPTION,DETAILS,SUMMARY -->
+                    <caption>
+                        A Doctor Who sorozat szakaszai
+                        <details>
+                            <summary>Összefoglalás, színek jelentése</summary>
+                            <hr>
+                            <p>A táblázat szemlélteti a két összetartozó sorozat Doctor Who (NewWho) és (Doctor Who
+                                Classic) szakaszait,
+                                főszereplőit, az évadaik és epizódjaik számait.</p>
+                            <p>A fenti színezés az alábbiakat jelenti:</p>
+                            <ul>
+                                <li><span class="table-notrecommended">Piros: </span>Kezdésnek <b>nem ajánljuk</b></li>
+                                <li><span class="table-mild-recommended">Sárga: </span>Kezdésnek <b>ajánljuk</b></li>
+                                <li><span class="table-recommended">Zöld: </span>Kezdésnek <b>nagyon ajánljuk</b></li>
+                            </ul>
+                        </details>
+                    </caption>
+                    <!-- /TABLE CAPTION,DETAILS,SUMMARY -->
+
+                    <!-- TABLE HEADER -->
+                    <tr>
+                        <th>Classic</th>
+                        <th colspan="3">NewWho</th>
+                    </tr>
+                    <!-- /TABLE HEADER -->
+
+                    <!-- TABLE BODY -->
+                    <tr>
+                        <td class="table-mild-recommended-bg"><b>Nem összefüggő</b><br>(elveszett részek)</td>
+                        <td class="table-recommended-bg"><b>Első szakasz<br>(2005-2009)</b><br>Russel T
+                            Davies<br>(showrunner)</td>
+                        <td class="table-mild-recommended-bg"><b>Második szakasz<br>(2010-2017)</b><br>Steven
+                            Moffat<br>(showrunner)</td>
+                        <td class="table-notrecommended-bg"><b>Harmadik szakasz<br>(2018 - )</b><br>Chris
+                            Chibnall<br>(showrunner)</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Doktorok:</b>
+                            <ul>
+                                <li>William Hartnell</li>
+                                <li>Patrick Troughton</li>
+                                <li>Jon Pertwee</li>
+                                <li>Tom Baker</li>
+                                <li>Peter Davison</li>
+                                <li>Colin Baker</li>
+                                <li>Sylvester McCoy</li>
+                                <li>Paul McGann</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <b>Doktorok:</b>
+                            <ul>
+                                <li>Christopher Eccleston</li>
+                                <li>David Tennant</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <b>Doktorok:</b>
+                            <ul>
+                                <li>Matt Smith</li>
+                                <li>Peter Capaldi</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <b>Doktorok:</b>
+                            <ul>
+                                <li>Jodie Whittaker</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>26 évad, 859 rész</td>
+                        <td>4 évad, 52 rész</td>
+                        <td>6 évad, 75 rész</td>
+                        <td>2 évad, 20 rész</td>
+                    </tr>
+                </table>
+                <!-- /TABLE BODY -->
+                <!-- /DOCTOR WHO ERAS TABLE-->
+
             </div>
+            <!-- /SECTION CONTENT CONTAINER -->
+
         </section>
+        <!-- /GUIDE SECTION -->
+
+        <!-- NEWSLETTER -->
         <section id="hirlevel">
             <h2>Íratkozz fel hírlevelünkre</h2>
             <hr>
             <div class="container">
                 <p>
-                Ne maradj le legfrissebb sorozattal, rendezvényekkel, összejövetelekkel, nyereményekkel kapcsolatos híreinkről! A lentebb megtalálható űrlap segítségével feliratkozhatsz hírlevelünkre, 
-                így biztosan nem maradsz le semmiről, akkor sem, ha a weblapot már régóta nem látogattad. Biztos lehetsz benne, hogy adataid megbízhatóan kezeljük!
+                    Ne maradj le legfrissebb sorozattal, rendezvényekkel, összejövetelekkel, nyereményekkel kapcsolatos
+                    híreinkről! A lentebb megtalálható űrlap segítségével feliratkozhatsz hírlevelünkre,
+                    így biztosan nem maradsz le semmiről, akkor sem, ha a weblapot már régóta nem látogattad. Biztos
+                    lehetsz benne, hogy adataid megbízhatóan kezeljük!
                 </p>
                 <div class="container text-center">
+                    <!-- SUBSCRIBE FORM -->
                     <form action="mailto:vmt982@inf.elte.hu" method="POST" enctype="text/plain">
                         <fieldset>
-                        <legend>Adatok</legend>
-                        <label for="nevInput">Add meg a teljes neved</label><br>
-                        <input type="text" name="nev" id="nevInput" size="50" placeholder="Név:" maxlength="40" required class="textInput"><br>
-                        <label for="emailInput">Add meg az Email címed, amin értesíthetünk</label><br>
-                        <input type="email" name="email" id="emailInput" size="50" placeholder="Email cím:" maxlength="40" class="textInput" required>
+                            <legend>Adatok</legend>
+                            <label for="nevInput">Add meg a teljes neved</label><br>
+                            <input type="text" name="nev" id="nevInput" size="50" placeholder="Név:" maxlength="40"
+                                required class="textInput"><br>
+                            <label for="emailInput">Add meg az Email címed, amin értesíthetünk</label><br>
+                            <input type="email" name="email" id="emailInput" size="50" placeholder="Email cím:"
+                                maxlength="40" class="textInput" required>
                         </fieldset>
                         <fieldset>
                             <legend>Nyeremények</legend>
                             <label for="v1">Híreken kívül értékes nyereményekkel is felkeresnénk téged</label><br>
-                            <input type="radio" name="nyeremeny" id="v1" value="1"><label id="lv1" for="v1">Érdekel</label>
-                            <input type="radio" name="nyeremeny" id="v2" value="2" checked><label id="lv2" for="v2">Nem érdekel</label>
+                            <input type="radio" name="nyeremeny" id="v1" value="1"><label id="lv1"
+                                for="v1">Érdekel</label>
+                            <input type="radio" name="nyeremeny" id="v2" value="2" checked><label id="lv2" for="v2">Nem
+                                érdekel</label>
                         </fieldset>
                         <fieldset>
-                        <legend>Érdekeltség</legend>
-                        <label for="erdekeltseg">Ha van időd add meg milyen az oldallal kapcsolatos hírekre lennél kíváncsi</label><br>
-                        <textarea name="erdekeltseg" id="erdekeltseg" cols="60" rows="6" maxlength="250" class="textInput"></textarea><br>
+                            <legend>Érdekeltség</legend>
+                            <label for="erdekeltseg">Ha van időd add meg milyen az oldallal kapcsolatos hírekre lennél
+                                kíváncsi</label><br>
+                            <textarea name="erdekeltseg" id="erdekeltseg" cols="60" rows="6" maxlength="250"
+                                class="textInput"></textarea><br>
                         </fieldset>
                         <label for="elfogad">
                             <input type="checkbox" name="elfogad" id="elfogad" value="igen" required>
@@ -321,20 +485,35 @@
                             <input type="reset" value="Töröl" class="myformButton">
                         </fieldset>
                     </form>
+                    <!-- /SUBSCRIBE FORM -->
+
                 </div>
             </div>
         </section>
-        <footer>
-                <a href="https://www.facebook.com/DoctorWho/"><i class="fab fa-facebook-square"></i> Facebook</a>
-                <h1>Whoniverse</h1>
-                <a href="https://www.youtube.com/user/doctorwho"><i class="fab fa-youtube"></i> Youtube</a>
-        </footer>
-    </div>
+        <!-- /NEWSLETTER -->
 
-    
-      <!-- BOOTSTRAP JS -->
-      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <!-- FOOTER -->
+        <footer>
+            <a href="https://www.facebook.com/DoctorWho/"><i class="fab fa-facebook-square"></i> Facebook</a>
+            <h1>Whoniverse</h1>
+            <a href="https://www.youtube.com/user/doctorwho"><i class="fab fa-youtube"></i> Youtube</a>
+        </footer>
+        <!-- /FOOTER -->
+
+    </div>
+    <!-- /CONTENT CONTAINER -->
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <!-- /BOOTSTRAP JS -->
 </body>
+
 </html>
