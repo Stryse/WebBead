@@ -290,6 +290,19 @@ article h2{
     text-align: left;
 }
 
+aside{
+    border-radius: 15px 5px 15px 5px;
+    padding: 10px 10px;
+    text-align: justify;
+    background-color: #003b6f;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+aside h4{
+    font-style: italic;
+}
+
 #trailerCaption{
     font-size: 1.5em;
     font-weight: 600;
