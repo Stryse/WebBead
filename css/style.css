@@ -1,64 +1,67 @@
-*{
+* {
     box-sizing: border-box;
 }
 
 /* ================NAVBAR STYLE===================*/
-.navbar{
+
+.navbar {
     padding: 0px 15px 0px 15px;
-    background-color: rgba(0,0,0,1.0);
+    background-color: rgba(0, 0, 0, 1.0);
 }
 
 @media (max-width: 768px) {
-    .navbar { background-color: #000; }
+    .navbar {
+        background-color: #000;
+    }
 }
 
-.navbar-brand > img{
+.navbar-brand>img {
     height: 50px;
 }
 
-.navbar-nav > li {
+.navbar-nav>li {
     padding-right: 15px;
     margin: auto;
 }
 
-.navbar-nav a{
+.navbar-nav a {
     color: #c5c5c5;
     font-family: 'Righteous', sans-serif;
     text-decoration: none;
     transition: .5s;
 }
 
-.navbar-nav a:hover{
+.navbar-nav a:hover {
     color: #fff;
     transition: .5s;
 }
 
-.navbar .navbar-nav .active > .nav-link {
-    color:#dbe11a;
+.navbar .navbar-nav .active>.nav-link {
+    color: #dbe11a;
 }
 
-#smallNavText{
+#smallNavText {
     font-size: 1.5em !important;
 }
 
-.navbar .dropdown-menu{
+.navbar .dropdown-menu {
     background-color: #000;
 }
 
-.facebook-link:hover{
+.facebook-link:hover {
     background-color: #4267B2;
 }
 
-.youtube-link:hover{
+.youtube-link:hover {
     background-color: #FF0000;
 }
 
-.wiki-link:hover{
+.wiki-link:hover {
     background-color: #fff;
     color: #000 !important;
 }
 
-.InsidePageLinks{
+.InsidePageLinks {
     position: absolute;
     left: -750px;
     top: inherit;
@@ -66,7 +69,7 @@
 
 /* ================HERO STYLE===================*/
 
-.hero-element{
+.hero-element {
     height: 500px;
     z-index: -1;
     padding: 0;
@@ -75,44 +78,44 @@
     background-repeat: no-repeat;
 }
 
-.h-main{
+.h-main {
     background-image: url("../img/Hero.png");
 }
 
-.h-classic{
+.h-classic {
     background-image: url("../img/HeroClassic.png");
 }
 
-.h-doctors{
+.h-doctors {
     background-image: url("../img/alldoctors.png");
     background-position: center top;
 }
 
-.h-newWho{
+.h-newWho {
     background-image: url("../img/NewWhoHero.jpg");
     background-position: center top;
 }
 
-#PageTitleHero h1{
+#PageTitleHero h1 {
     color: #fff;
     margin: auto;
     text-align: center;
     text-shadow: 2px 2px black;
 }
 
-#PageTitleHero_D h1{
+#PageTitleHero_D h1 {
     color: #fff;
     text-align: center;
     text-shadow: 2px 2px black;
 }
 
-#PageTitleHero{
+#PageTitleHero {
     height: inherit;
     display: flex;
     justify-content: center;
 }
 
-#PageTitleHero_D{
+#PageTitleHero_D {
     height: inherit;
     display: flex;
     justify-content: center;
@@ -120,26 +123,26 @@
 }
 
 @media (max-width: 660px) {
-    #T_First, #T_First_D{
+    #T_First, #T_First_D {
         font-size: 1.5em;
     }
-
-    #T_Second{
+    #T_Second {
         font-size: 0.5em;
     }
 }
 
 @media (min-width: 660px) {
-    #T_First, #T_First_D{
+    #T_First, #T_First_D {
         font-size: 3em;
     }
-
-    #T_Second{
+    #T_Second {
         font-size: 1em;
     }
 }
+
 /* ================SECTION STYLE===================*/
-.sectionHeader{
+
+.sectionHeader {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,7 +151,7 @@
     text-shadow: 2px 2px #000;
 }
 
-.sectionHeader-small{
+.sectionHeader-small {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -157,41 +160,37 @@
     text-shadow: 2px 2px #000;
 }
 
-.smallSeparator{
+.smallSeparator {
     padding-top: 80px;
 }
 
-.sectionHeader h2,h3{
+.sectionHeader h2, h3 {
     color: #dfdfdf;
-    font-family: 'Arnold',sans-serif;
+    font-family: 'Arnold', sans-serif;
     font-weight: 800;
     z-index: 5;
 }
 
-.sectionHeader-small h3{
+.sectionHeader-small h3 {
     margin-left: 5%;
 }
 
 @media (max-width: 768px) {
-
-    .sectionHeader .jc{
+    .sectionHeader .jc {
         justify-content: center;
     }
-
-    .sectionHeader h2{
+    .sectionHeader h2 {
         margin: auto;
         margin-bottom: 0;
         padding-bottom: 5px;
         font-size: 1.5em;
         text-align: center;
     }
-    
-    .sectionHeader h3{
+    .sectionHeader h3 {
         font-size: 1.3em;
         text-align: center;
     }
-    
-    .sectionHeader hr{
+    .sectionHeader hr {
         height: 1px;
         background-color: #dfdfdf;
         margin-left: 10%;
@@ -199,28 +198,24 @@
         margin-top: 2px;
         margin-bottom: 2px;
     }
-
-    .sectionHeader img{
+    .sectionHeader img {
         max-height: 100px;
     }
 }
 
 @media (min-width: 768px) {
-
-    .sectionHeader h2{
+    .sectionHeader h2 {
         padding-top: 45px;
         margin-left: 15%;
         margin-bottom: 0;
         font-size: 2.5em;
     }
-    
-    .sectionHeader h3{
+    .sectionHeader h3 {
         margin-left: 20%;
         font-size: 1.5em;
         padding-top: 0px;
     }
-    
-    .sectionHeader hr{
+    .sectionHeader hr {
         height: 1px;
         background-color: #dfdfdf;
         margin-left: 10%;
@@ -229,83 +224,79 @@
     }
 }
 
-#kezdolaptitle{
+#kezdolaptitle {
     display: flex;
     align-items: flex-end;
     padding-top: 20px;
 }
 
-#kezdolaptitle img{
+#kezdolaptitle img {
     padding-right: 15px;
 }
 
-.sectionContent{
+.sectionContent {
     padding-bottom: 90px;
 }
 
-.sectionContent a:link{
+.sectionContent a:link {
     text-decoration: underline;
     font-weight: bold;
 }
 
-.sectionContent a:visited{
+.sectionContent a:visited {
     color: purple;
 }
 
-.mydark-bg{
+.mydark-bg {
     background-color: #212121;
 }
 
-.my-col-flex{
+.my-col-flex {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-.mylight-bg{
+.mylight-bg {
     background-color: #dfdfdf;
 }
 
-.mydkblue-bg{
-    background-color:  #101820;
+.mydkblue-bg {
+    background-color: #101820;
 }
 
-@media (max-width: 992px)
-{
-    .pd0-medium{
+@media (max-width: 992px) {
+    .pd0-medium {
         padding: 0px;
     }
-
-    .nm-medium{
+    .nm-medium {
         margin: 0px;
         max-width: 100%;
     }
 }
 
-
-article p{
+article p {
     line-height: 2.5em;
-    font-family: 'Quicksand',sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-weight: 500;
     font-size: 1.2em;
     padding-top: 30px;
     text-align: justify;
 }
 
-@media (max-width: 576px)
-{
-    article p{
+@media (max-width: 576px) {
+    article p {
         line-height: 2em;
         font-size: 1em;
     }
 }
 
-article h4{
+article h4 {
     font-style: italic;
     text-align: left;
 }
 
-aside{
+aside {
     border-radius: 15px 5px 15px 5px;
     padding: 10px 10px;
     text-align: justify;
@@ -314,11 +305,11 @@ aside{
     text-shadow: 1px 1px black;
 }
 
-aside h4{
+aside h4 {
     font-style: italic;
 }
 
-#trailerCaption{
+#trailerCaption {
     font-size: 1.5em;
     font-weight: 600;
     margin-top: 20px;
@@ -326,114 +317,111 @@ aside h4{
     margin-bottom: 0;
 }
 
-.mediaArea{
+.mediaArea {
     margin-top: 40px;
 }
 
-.media-video{
-    border: 1px solid rgba(0,0,0,0.5);
+.media-video {
+    border: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     overflow: hidden;
 }
 
-#gallifreyImageBackground{
+#gallifreyImageBackground {
     background-color: #101820;
     text-align: center;
 }
 
-.sectionSepImgContainer{
+.sectionSepImgContainer {
     display: flex;
     justify-content: flex-end;
 }
 
-@media (min-width: 768px){
-    .sectionHeader img{
+@media (min-width: 768px) {
+    .sectionHeader img {
         max-height: 130px;
     }
 }
 
-.MainText{
-    font-family: 'Quicksand',sans-serif;
+.MainText {
+    font-family: 'Quicksand', sans-serif;
     font-size: 1.4em;
     padding-top: 35px;
     text-align: justify;
 }
 
-@media (max-width: 768px)
-{
-    article, .MainText{
+@media (max-width: 768px) {
+    article, .MainText {
         font-size: 1em;
     }
 }
 
-#tardisOnStreet{
+#tardisOnStreet {
     margin: auto;
     margin-top: 60px;
     padding: 2px 2px;
 }
 
-figure, figcaption{
+figure, figcaption {
     text-align: center;
 }
 
-#tardisOnStreet img{
+#tardisOnStreet img {
     max-height: 400px;
 }
 
-.preview{
+.preview {
     transition: .5s;
 }
 
-.preview:hover{
+.preview:hover {
     transform: scale(1.03);
     opacity: 0.9;
     transition: .5s;
 }
+
 /* TABLE STYLE*/
 
-#szakaszTable{
+#szakaszTable {
     margin: 80px auto;
     text-align: center;
 }
 
-table,th, td {
+table, th, td {
     border: 1px solid black;
 }
 
-table caption{
+table caption {
     text-align: center;
 }
 
-#szakaszTable caption table{
+#szakaszTable caption table {
     margin: 10px auto;
 }
 
-#szakaszTable caption td{
+#szakaszTable caption td {
     padding: 0px 0px;
 }
 
-@media (min-width: 768px)
-{
+@media (min-width: 768px) {
     #szakaszTable th, td {
         padding: 15px 25px 15px 25px;
     }
 }
 
-@media (max-width: 768px)
-{
-    table td ul{
+@media (max-width: 768px) {
+    table td ul {
         padding-left: 25px;
     }
 }
 
-@media (max-width: 576px)
-{
-    #szakaszTable{
+@media (max-width: 576px) {
+    #szakaszTable {
         font-size: 0.6em;
     }
 }
 
-#szakaszTable th{
+#szakaszTable th {
     background-color: #002060;
     color: #fff;
     text-align: center;
@@ -442,81 +430,84 @@ table caption{
     padding-bottom: 15px;
 }
 
-#szakaszTable tr:nth-child(3){
+#szakaszTable tr:nth-child(3) {
     text-align: left;
     vertical-align: top;
 }
 
-.table-recommended-bg{
+.table-recommended-bg {
     background-color: green;
 }
 
-.table-notrecommended-bg{
+.table-notrecommended-bg {
     background-color: red;
 }
 
-.table-mild-recommended-bg{
+.table-mild-recommended-bg {
     background-color: #ffc601;
 }
 
-.table-recommended{
+.table-recommended {
     color: green;
     font-weight: bold;
     text-shadow: 1px 1px black;
 }
 
-.table-notrecommended{
+.table-notrecommended {
     color: red;
     font-weight: bold;
     text-shadow: 1px 1px black;
 }
 
-.table-mild-recommended{
+.table-mild-recommended {
     color: #ffc601;
     font-weight: bold;
     text-shadow: 1px 1px black;
 }
 
-.monster-table{
+.monster-table {
     background-color: #efefef;
 }
 
-.monster-table th{
+.monster-table th {
     text-align: center;
 }
 
-.monster-table tr td:first-child{
+.monster-table tr td:first-child {
     font-weight: bold;
 }
 
 /* HIRLEVEL STYLE*/
-#hirlevel{
+
+#hirlevel {
     background-color: #ffd101;
     color: #fff;
     padding-top: 30px;
 }
 
-#hirlevel hr{
+#hirlevel hr {
     background-color: #fff;
     height: 3px;
     margin-left: 15%;
     border-radius: 4px;
 }
 
-#hirlevel h2{
+#hirlevel h2 {
     margin-left: 10%;
-    text-shadow: 2px 2px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
 }
 
-#hirlevel p{
+#hirlevel p {
     text-align: justify;
     /*text-shadow: 2px 2px rgba(0,0,0,0.4);*/
     color: #000;
     font-weight: 600;
     font-size: 1.5em;
 }
+
 /* HIRLEVEL FORM */
-#hirlevel form{
+
+#hirlevel form {
     padding-top: 20px;
     padding-bottom: 20px;
     margin-top: 40px;
@@ -524,36 +515,31 @@ table caption{
     border-radius: 10px 10px 0px 0px;
 }
 
-@media(max-width: 576px)
-{
-    #hirlevel h2{
+@media(max-width: 576px) {
+    #hirlevel h2 {
         font-size: 1.5rem;
     }
-
-    .textInput{
+    .textInput {
         width: 85%;
         padding: 2px 10px;
         border-radius: 6px 6px;
     }
-    
-    #hirlevel form label{
+    #hirlevel form label {
         font-size: 0.8em;
     }
-
-    #hirlevel p{
+    #hirlevel p {
         font-size: 1em;
     }
 }
 
-@media(min-width: 576px)
-{
-    .textInput{
+@media(min-width: 576px) {
+    .textInput {
         padding: 2px 10px;
         border-radius: 6px 6px;
     }
 }
 
-#hirlevel form label{
+#hirlevel form label {
     color: #000;
     font-weight: bold;
 }
@@ -562,7 +548,7 @@ table caption{
     padding: 0px 10px 10px 10px;
 }
 
-#hirlevel form legend{
+#hirlevel form legend {
     text-shadow: 1px 1px black;
     text-align: center;
 }
@@ -574,7 +560,7 @@ table caption{
     border-radius: 8px;
     font-weight: bold;
     padding: 5px 15px;
-    text-shadow: 1px 1px rgba(0,0,0,0.3);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
     transition: .5s;
     margin: 10px 5px;
 }
@@ -585,14 +571,15 @@ table caption{
     border-color: #c70009;
 }
 
-.myformButton:focus{
+.myformButton:focus {
     transition: .5s;
     color: #0024c7;
     border-color: #0024c7;
 }
 
 /* FOOTER STYLE */
-footer{
+
+footer {
     height: 100px;
     display: flex;
     align-items: center;
@@ -600,20 +587,19 @@ footer{
     background-color: #101820;
 }
 
-footer h1, footer a{
+footer h1, footer a {
     color: #dfdfdf;
     text-decoration: none;
     font-weight: 800;
 }
 
-footer a:hover{
+footer a:hover {
     color: #fff;
     text-decoration: none;
 }
 
-@media (max-width: 576px)
-{
-    footer h1, footer a{
+@media (max-width: 576px) {
+    footer h1, footer a {
         font-size: 1rem;
     }
 }
