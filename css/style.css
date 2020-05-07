@@ -58,6 +58,12 @@
     color: #000 !important;
 }
 
+.InsidePageLinks{
+    position: absolute;
+    left: -250px;
+    top: inherit;
+}
+
 /* ================HERO STYLE===================*/
 
 .hero-element{
