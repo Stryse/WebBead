@@ -60,7 +60,7 @@
 
 .InsidePageLinks{
     position: absolute;
-    left: -250px;
+    left: -750px;
     top: inherit;
 }
 
@@ -241,6 +241,15 @@
 
 .sectionContent{
     padding-bottom: 90px;
+}
+
+.sectionContent a:link{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.sectionContent a:visited{
+    color: purple;
 }
 
 .mydark-bg{
