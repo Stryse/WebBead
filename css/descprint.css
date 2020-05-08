@@ -1,0 +1,14 @@
+
+
+@media print {
+
+    *{
+        background: none !important;
+        color: black !important;
+        text-shadow: none !important;
+    }
+
+    .sidebar{
+        display: none !important;
+    }
+}
