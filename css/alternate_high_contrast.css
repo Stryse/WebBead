@@ -13,12 +13,6 @@ body{
     background-color: rgba(0, 0, 0, 1.0);
 }
 
-@media (max-width: 768px) {
-    .navbar {
-        background-color: #000;
-    }
-}
-
 .navbar-brand>img {
     height: 50px;
 }
@@ -28,24 +22,27 @@ body{
     margin: auto;
 }
 
+.navbar .navbar-nav .active>.nav-link {
+    color: red !important;
+}
+
 .navbar-nav a {
-    color: #c5c5c5;
+    font-size: 1.75em;
+    color: yellow !important;
     font-family: 'Righteous', Arial, Helvetica, sans-serif;
     text-decoration: none;
     transition: .5s;
+    text-align: center;
 }
 
 .navbar-nav a:hover {
-    color: #fff;
+    color: white !important;
     transition: .5s;
 }
 
-.navbar .navbar-nav .active>.nav-link {
-    color: #dbe11a;
-}
-
 #smallNavText {
-    font-size: 1.5em !important;
+    color: yellow !important;
+    font-size: 2em !important;
 }
 
 .navbar .dropdown-menu {
@@ -72,16 +69,17 @@ body{
 }
 
 #highContrastSwitch{
-    color: white;
+    color: lime;
     background: transparent;
     border: none;
     transition: .5s;
+    font-size: 1.5em;
 }
 
 #highContrastSwitch:hover{
     transform: scale(1.1);
     transition: .5s;
-    color: yellow;   
+    color: red;   
 }
 
 /* ================HERO STYLE===================*/
@@ -90,7 +88,7 @@ body{
     height: 500px;
     z-index: -1;
     padding: 0;
-    background-color: #101820;
+    background-color: #000;
     background-position: center center;
     background-repeat: no-repeat;
 }
@@ -114,14 +112,14 @@ body{
 }
 
 #PageTitleHero h1 {
-    color: #fff;
+    color: limegreen;
     margin: auto;
     text-align: center;
     text-shadow: 2px 2px black;
 }
 
 #PageTitleHero_D h1 {
-    color: #fff;
+    color: yellow;
     text-align: center;
     text-shadow: 2px 2px black;
 }
@@ -139,21 +137,21 @@ body{
     align-items: flex-end;
 }
 
-@media (max-width: 660px) {
+@media (max-width: 830px) {
     #T_First, #T_First_D {
         font-size: 1.35em;
     }
     #T_Second {
-        font-size: 0.5em;
+        font-size: 1em;
     }
 }
 
-@media (min-width: 660px) {
+@media (min-width: 830px) {
     #T_First, #T_First_D {
-        font-size: 2.7em;
+        font-size: 3.2em;
     }
     #T_Second {
-        font-size: 1em;
+        font-size: 1.5em;
     }
 }
 
@@ -163,9 +161,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 200px;
-    background-color: #101820;
-    text-shadow: 2px 2px #000;
+    height: 400px;
+    background-color: #000;
 }
 
 .sectionHeader-small {
@@ -173,7 +170,7 @@ body{
     align-items: center;
     justify-content: flex-start;
     height: 120px;
-    background-color: #101820;
+    background-color: #000;
     text-shadow: 2px 2px #000;
 }
 
@@ -182,7 +179,7 @@ body{
 }
 
 .sectionHeader h2, h3 {
-    color: #dfdfdf;
+    color: limegreen;
     font-family: 'Arnold', Arial, Helvetica, sans-serif;
     font-weight: 800;
     z-index: 5;
@@ -200,16 +197,16 @@ body{
         margin: auto;
         margin-bottom: 0;
         padding-bottom: 5px;
-        font-size: 1.5em;
+        font-size: 2.5em;
         text-align: center;
     }
     .sectionHeader h3 {
-        font-size: 1.3em;
+        font-size: 2.1em;
         text-align: center;
     }
     .sectionHeader hr {
         height: 1px;
-        background-color: #dfdfdf;
+        background-color: limegreen;
         margin-left: 10%;
         margin-right: 10%;
         margin-top: 2px;
@@ -225,16 +222,16 @@ body{
         padding-top: 45px;
         margin-left: 15%;
         margin-bottom: 0;
-        font-size: 2.5em;
+        font-size: 4.5em;
     }
     .sectionHeader h3 {
         margin-left: 20%;
-        font-size: 1.5em;
+        font-size: 3.5em;
         padding-top: 0px;
     }
     .sectionHeader hr {
         height: 1px;
-        background-color: #dfdfdf;
+        background-color: limegreen;
         margin-left: 10%;
         margin-top: 2px;
         margin-bottom: 2px;
@@ -253,19 +250,21 @@ body{
 
 .sectionContent {
     padding-bottom: 90px;
+    background-color: #000;
 }
 
 .sectionContent a:link {
     text-decoration: underline;
     font-weight: bold;
+    color: lightskyblue;
 }
 
 .sectionContent a:visited {
-    color: purple;
+    color: magenta;
 }
 
 .mydark-bg {
-    background-color: #212121;
+    background-color: #000;
 }
 
 .my-col-flex {
@@ -275,11 +274,11 @@ body{
 }
 
 .mylight-bg {
-    background-color: #dfdfdf;
+    background-color: #000;
 }
 
 .mydkblue-bg {
-    background-color: #101820;
+    background-color: #000;
 }
 
 @media (max-width: 992px) {
@@ -293,12 +292,13 @@ body{
 }
 
 article p {
-    line-height: 2.5em;
+    line-height: 2em;
     font-family: 'Quicksand', Arial, Helvetica, sans-serif;
     font-weight: 500;
-    font-size: 1.2em;
+    font-size: 1.5em;
     padding-top: 30px;
     text-align: justify;
+    color: lime;
 }
 
 @media (max-width: 576px) {
@@ -312,14 +312,17 @@ article h4 {
     font-style: italic;
     text-align: left;
     padding-top: 10px;
+    color: orange;
+    font-size: 2.2em;
 }
 
 aside {
     border-radius: 15px 5px 15px 5px;
     padding: 10px 10px;
     text-align: justify;
-    background-color: #003b6f;
-    color: white;
+    background-color: #000;
+    border: 1px solid white;
+    color: lime;
     font-size: 1.2em;
     text-shadow: 1px 1px black;
 }
@@ -333,6 +336,7 @@ aside {
 
 aside h4 {
     font-style: italic;
+    color: orange;
 }
 
 #trailerCaption {
@@ -341,6 +345,7 @@ aside h4 {
     margin-top: 20px;
     margin-left: 4%;
     margin-bottom: 0;
+    color: limegreen;
 }
 
 .mediaArea {
@@ -354,7 +359,7 @@ aside h4 {
 }
 
 #gallifreyImageBackground {
-    background-color: #101820;
+    background-color: #000;
     text-align: center;
 }
 
@@ -371,14 +376,19 @@ aside h4 {
 
 .MainText {
     font-family: 'Quicksand', Arial, Helvetica, sans-serif;
-    font-size: 1.4em;
+    font-size: 2.4em;
     padding-top: 35px;
     text-align: justify;
+    color: lime;
+}
+
+.MainText b{
+    color: lightcyan;
 }
 
 @media (max-width: 768px) {
     article, .MainText {
-        font-size: 1em;
+        font-size: 1.4em;
     }
 }
 
@@ -414,7 +424,7 @@ figure, figcaption {
 }
 
 table, th, td {
-    border: 1px solid black;
+    border: 1px solid white;
 }
 
 table caption {
@@ -423,6 +433,10 @@ table caption {
 
 #szakaszTable caption table {
     margin: 10px auto;
+}
+
+table caption{
+    color: lime;
 }
 
 #szakaszTable caption td {
@@ -448,12 +462,16 @@ table caption {
 }
 
 #szakaszTable th {
-    background-color: #002060;
-    color: #fff;
+    background-color: #040718ee;
+    color: lime;
     text-align: center;
     vertical-align: middle;
     padding-top: 15px;
     padding-bottom: 15px;
+}
+
+#szakaszTable td{
+    color: lime;
 }
 
 #szakaszTable tr:nth-child(3) {
@@ -463,14 +481,17 @@ table caption {
 
 .table-recommended-bg {
     background-color: green;
+    color: #000 !important;
 }
 
 .table-notrecommended-bg {
     background-color: red;
+    color: #000 !important;
 }
 
 .table-mild-recommended-bg {
     background-color: #ffc601;
+    color: #000 !important;
 }
 
 .table-recommended {
@@ -506,13 +527,13 @@ table caption {
 /* HIRLEVEL STYLE*/
 
 #hirlevel {
-    background-color: #ffd101;
-    color: #fff;
+    background-color: #000;
+    color: lime;
     padding-top: 30px;
 }
 
 #hirlevel hr {
-    background-color: #fff;
+    background-color: limegreen;
     height: 3px;
     margin-left: 15%;
     border-radius: 4px;
@@ -521,6 +542,7 @@ table caption {
 #hirlevel h2 {
     margin-left: 10%;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+    font-size: 3em;
 }
 
 #hirlevel p {
@@ -537,13 +559,28 @@ table caption {
     padding-top: 20px;
     padding-bottom: 20px;
     margin-top: 40px;
-    background-color: #ffc601;
+    background-color: #111111;
     border-radius: 10px 10px 0px 0px;
+    border: 1px solid white;
 }
 
-@media(max-width: 576px) {
+#hirlevel legend{
+    color: red;
+}
+
+#hirlevel form input, #hirlevel form textarea{
+    background-color: #000;
+    color: cyan;
+    font-size: 1.4em;
+}
+
+#hirlevel form input::placeholder, #hirlevel form textarea::placeholder{
+    color: cyan;
+}
+
+@media(max-width: 780px) {
     #hirlevel h2 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     .textInput {
         width: 85%;
@@ -558,7 +595,7 @@ table caption {
     }
 }
 
-@media(min-width: 576px) {
+@media(min-width: 780px) {
     .textInput {
         padding: 2px 10px;
         border-radius: 6px 6px;
@@ -566,7 +603,7 @@ table caption {
 }
 
 #hirlevel form label {
-    color: #000;
+    color: lime;
     font-weight: bold;
 }
 
@@ -582,7 +619,7 @@ table caption {
 .myformButton {
     background-color: transparent;
     border: 3px solid white;
-    color: white;
+    color: yellow;
     border-radius: 8px;
     font-weight: bold;
     padding: 5px 15px;
@@ -610,17 +647,17 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #101820;
+    background-color: #020202;
 }
 
 footer h1, footer a {
-    color: #dfdfdf;
+    color: yellow;
     text-decoration: none;
     font-weight: 800;
 }
 
 footer a:hover {
-    color: #fff;
+    color: lime;
     text-decoration: none;
 }
 
