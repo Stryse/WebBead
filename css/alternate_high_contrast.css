@@ -254,13 +254,13 @@ body{
     background-color: #000;
 }
 
-.sectionContent a:link {
+.sectionContent a:link, .sectionContent a:link *{
     text-decoration: underline;
     font-weight: bold;
     color: lightskyblue;
 }
 
-.sectionContent a:visited {
+.sectionContent a:visited, .sectionContent a:visited *{
     color: magenta;
 }
 
