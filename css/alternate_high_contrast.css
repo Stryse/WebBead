@@ -484,6 +484,10 @@ table caption{
     vertical-align: top;
 }
 
+#szakaszTable details {
+    text-align: left;
+}
+
 .table-recommended-bg {
     background-color: green;
     color: #000 !important;
