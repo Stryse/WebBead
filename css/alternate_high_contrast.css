@@ -10,7 +10,7 @@ body{
 
 .navbar {
     padding: 0px 15px 0px 15px;
-    background-color: rgba(0, 0, 0, 1.0);
+    background-color: #111111
 }
 
 .navbar-brand>img {
@@ -74,6 +74,7 @@ body{
     border: none;
     transition: .5s;
     font-size: 1.5em;
+    margin: auto;
 }
 
 #highContrastSwitch:hover{

@@ -76,6 +76,7 @@ body{
     background: transparent;
     border: none;
     transition: .5s;
+    margin: auto;
 }
 
 #highContrastSwitch:hover{
