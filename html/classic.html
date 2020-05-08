@@ -11,7 +11,8 @@
     <!--/BOOTSTRAP-->
 
     <!--CUSTOM CSS-->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css" type="text/css" title="Default">
+    <link rel="alternate stylesheet" href="../css/alternate_high_contrast.css" type="text/css" title="High Contrast Larger Font Size">
     <!--/CUSTOM CSS-->
 
     <!--FONTS-->
@@ -79,6 +80,8 @@
                         <a class="nav-link" href="./dokik.html">Dokik</a>
                     </li>
                 </ul>
+
+                <button id="highContrastSwitch" class="nav-link text-center" role="button" onclick="switchStyle();"><span class="fas fa-low-vision"><br>Magas Kontraszt</button>
                 <!-- LINKS - HIDDEN ON MEDIUM SCREEN -->
                 <ul class="navbar-nav ml-auto d-md-none d-lg-flex">
                     <li class="nav-item">
@@ -168,7 +171,7 @@
 
             <!-- SECTION CONTENT CONTAINER -->
             <div class="container-fluid">
-                <div class="row py-4">
+                <div class="row py-4 sectionContent">
                     <div class="col-sm-12 col-md-7 col-lg-6 m-auto">
                         <p class="MainText">
                             A sorozat <b>gyökerei egészen az 1960-as évekig nyúlnak vissza.</b> Az alkotók nem is tudták
@@ -533,14 +536,14 @@
         <section id="hirlevel">
             <h2 id="newsletter">Íratkozz fel hírlevelünkre</h2>
             <hr>
-            <div class="container">
+            <div class="container-lg">
                 <p>
                     Ne maradj le legfrissebb sorozattal, rendezvényekkel, összejövetelekkel, nyereményekkel kapcsolatos
                     híreinkről! A lentebb megtalálható űrlap segítségével feliratkozhatsz hírlevelünkre,
                     így biztosan nem maradsz le semmiről, akkor sem, ha a weblapot már régóta nem látogattad. Biztos
                     lehetsz benne, hogy adataid megbízhatóan kezeljük!
                 </p>
-                <div class="container text-center">
+                <div class="container-lg text-center">
                     <!-- SUBSCRIBE FORM -->
                     <form action="mailto:vmt982@inf.elte.hu" method="POST" enctype="text/plain">
                         <fieldset>
@@ -612,6 +615,10 @@
     </div>
     <!-- /CONTENT CONTAINER -->
 
+
+    <!-- STYLE SWITCHER JS-->
+    <script src="../js/styleswitcher.js"></script>
+    <!-- STYLE SWITCHER JS-->
     <!-- BOOTSTRAP JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

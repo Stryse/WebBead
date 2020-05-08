@@ -18,7 +18,7 @@ body{
 }
 
 .navbar-nav>li {
-    padding-right: 15px;
+    padding-right: 5px;
     margin: auto;
 }
 
@@ -27,7 +27,7 @@ body{
 }
 
 .navbar-nav a {
-    font-size: 1.75em;
+    font-size: 1.5em;
     color: yellow !important;
     font-family: 'Righteous', Arial, Helvetica, sans-serif;
     text-decoration: none;
@@ -187,6 +187,7 @@ body{
 
 .sectionHeader-small h3 {
     margin-left: 5%;
+    font-size: 2.75em;
 }
 
 @media (max-width: 768px) {
@@ -222,7 +223,7 @@ body{
         padding-top: 45px;
         margin-left: 15%;
         margin-bottom: 0;
-        font-size: 4.5em;
+        font-size: 4.3em;
     }
     .sectionHeader h3 {
         margin-left: 20%;
@@ -281,14 +282,13 @@ body{
     background-color: #000;
 }
 
-@media (max-width: 992px) {
-    .pd0-medium {
-        padding: 0px;
-    }
-    .nm-medium {
-        margin: 0px;
-        max-width: 100%;
-    }
+.pd0-medium {
+    padding: 0px;
+}
+
+.nm-medium {
+    margin: 0px;
+    max-width: 100%;
 }
 
 article p {
@@ -416,11 +416,16 @@ figure, figcaption {
     transition: .5s;
 }
 
+#dalekCarousel, #cybermanCarousel{
+    text-align: center;
+}
+
 /* TABLE STYLE*/
 
 #szakaszTable {
     margin: 80px auto;
     text-align: center;
+    font-size: 1.35em;
 }
 
 table, th, td {
@@ -513,11 +518,21 @@ table caption{
 }
 
 .monster-table {
-    background-color: #efefef;
+    background-color: #000;
+    border: 1px solid white;
+    color: lime;
+    font-size: 1.6em;
+}
+
+@media (max-width: 1200px){
+    .monster-table{
+        font-size: 1.2em;
+    }
 }
 
 .monster-table th {
     text-align: center;
+    color: cyan;
 }
 
 .monster-table tr td:first-child {
